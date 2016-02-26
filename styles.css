@@ -1,3 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+
+body {
+	font-family:'Montserrat';
+}
+
+.script {
+	font-family:'Cookie';
+	font-size:3em;
+}
+
 .ui.menu .item img.logo {
     margin-right: 1.5em;
 }
@@ -9,6 +21,10 @@
 .ui.footer.segment {
 	margin: 5em 0em 0em;
     padding: 5em 0em;
+	background-color:#08062b;
+}
+
+.footer {
 }
 
 .google-map {
@@ -24,4 +40,48 @@
 	left: 0;
 	width: 100% !important;
 	height: 100% !important;
+}
+
+.active.item {
+	color:green;
+}
+
+.nav {
+	position:fixed;
+	width:100%;
+	background-color:#08062b;
+	height:75px;
+	top:0;
+	left:0;
+	z-index:999;
+}
+
+.navlinks {
+	text-transform: uppercase;
+	text-align:center;
+	line-height:75px;
+	font-size:2em;
+}
+
+.navlinks a {
+	padding:0 5%;
+	color:#d4d5f6;
+}
+
+.navlinks a:hover {
+	color:#fff;
+}
+
+.header-img{
+	width:150px;
+	float:left;
+	margin-left:5%;
+}
+
+.border-right {
+	border-right:1px solid rgba(34, 36, 38, 0.1);
+}
+
+.bold-text {
+	font-weight: bold;
 }
