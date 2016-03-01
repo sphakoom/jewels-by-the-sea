@@ -1,0 +1,69 @@
+<head>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  	<script src="http://pixelperfect.me/cb/bower_components/Semantic-UI/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://pixelperfect.me/cb/bower_components/Semantic-UI/dist/semantic.css">
+
+  	<style type="text/css">
+  	#Page {
+  padding-top: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+.ui.sidebar {
+  padding: 30px;
+}
+</style>
+
+  <script>
+  	// SIDEBAR 
+	$('.moreMenu').click(function() {
+	  $('.ui.sidebar')
+	    .sidebar('setting', 'transition', 'overlay')
+	    .sidebar('toggle')
+	    .sidebar('attach events', '.moreMenu', 'show')
+	  ;
+	});
+
+	if ($(window).width() < 767) 
+	$('.responsiveWidget').parent().css('display', 'inline');
+
+  </script>
+</head>
+<body>
+
+<div id="Page">
+  <header class="ui grid container">
+    <div class="four wide column">
+      <h1 class="logo">Logo</h1>
+    </div>
+    <div class="four wide column">
+      <div class="widget">
+        <div class="ui right action left icon fluid input"><i class="search icon"></i>
+          <input type="text" placeholder="Search"/>
+          <div class="ui floating orange dropdown button">
+            <div class="text">This Page</div>
+            <div class="menu">
+              <div class="item">This Organization</div>
+              <div class="item">Entire Site	</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="four wide column">
+      <div class="widget">
+        <div class="ui olive fluid button">Button</div>
+      </div>
+    </div>
+    <div class="four wide column">
+      <div class="ui teal right floated button moreMenu">Launch Sidebar</div>
+    </div>
+  </header>
+  <div class="ui sidebar vertical menu">
+    <div class="clearfix"></div>
+    <div class="sidebarWidget">
+      <h4>Widget Header</h4>
+    </div>
+  </div>
+</div>
+</body>
