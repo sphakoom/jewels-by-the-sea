@@ -132,37 +132,49 @@ header.smaller .nav-container a {
 }
 
 @media all and (max-width: 660px) {
+	header {
+		height:50px;
+	}
+
     header #logo {
-        display: block;
-        float: none;
-        margin: 0 auto;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
+    	width:80px;
+    	height:80px;
     }
-    header nav {
-        display: block;
-        float: none;
+
+    header .navlinks {
+    	text-align:left;
+    	font-size:0.75em;
+    }
+
+    header a.navlink {
+    	padding:0;
+    }
+
+    header .nav-container {
+    	width:200px;
         height: 50px;
-        text-align: center;
-        margin: 0 auto;
     }
-    header nav a {
+    header .nav-container a {
         line-height: 50px;
-        margin: 0 10px;
     }
     header.smaller {
-        height: 75px;
+        height: 25px;
     }
     header.smaller #logo {
         height: 40px;
-        line-height: 40px;
-        font-size: 30px;
     }
-    header.smaller nav {
-        height: 35px;
+    header.smaller .nav-container {
+        height: 25px;
     }
-    header.smaller nav a {
-        line-height: 35px;
+    header.smaller .nav-container a {
+        line-height: 25px;
     }
+    header.smaller a.navlink {
+    	padding:0;
+    }
+
+    header.smaller .navlinks {
+    	font-size:0.75em;
+    }
+
 }

@@ -26,6 +26,9 @@
         });
     }
     window.onload = init();
+
+
+
 </script>
 
 
@@ -48,6 +51,7 @@
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/dropdown.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/icon.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/modal.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/components/sidebar.min.css">
   <link rel="stylesheet" type-"text/css" href="styles.css">
 
 <body>
@@ -61,21 +65,57 @@
       js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=69518898450";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-  </script>
 
+
+        $('#show-sidebar').click(function() {
+  $('.ui.sidebar')
+    .sidebar('setting', 'transition', 'overlay')
+    .sidebar('toggle')
+    .sidebar('attach events', '.ui.sidebar', 'show')
+  ;
+});
+  </script>
+<!--
   <header>
     <div class="navlinks">
       <div id="logo"><a href="/"><img class="header-img" src="images/logo.png" /></a></div>
       <div class="nav-container">
         <a href="index.html" class="item navlink">Home</a>
         <a href="about.html" class="active item navlink">About</a>
-        <a href="visit.html" class="item navlink">Visit&nbsp;Us</a>
+        <a href="visit.html" class="item navlink">Visit</a>
         <a href="index.html#products" class="item navlink">Products</a>
         <a href="faq.html" class="item navlink">FAQ</a>
       </div>
     </div>
   </header>
+-->
+<div class="ui left inverted vertical menu sidebar">
+  <div class="item">
+    <div id="hide-sidebar" class="button">
+      <i class="sidebar icon"></i>
+    </div>
+  </div>
+  <a class="item">
+    Item 1
+  </a>
+  <a class="item">
+    Item 2
+  </a>
+  <a class="item">
+    Item 3
+  </a>
+</div>
 
+
+<header>
+  <div id="show-sidebar" class="button toggler" style="color:white;">
+        <i class="sidebar icon"></i>
+        Sidebar
+      </div> 
+</header>
+
+
+<div class="pusher">
   <!-- Main Content -->
   <div class="ui main container">
     <h1 class="script">Jewels By The Sea</h1>  
@@ -222,7 +262,7 @@
   </div>
 
   <ng-include src="'partials/footer.html'"></ng-include>
-
+</div>
 
 </body>
 </html>
