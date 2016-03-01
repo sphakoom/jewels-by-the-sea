@@ -29,7 +29,18 @@
 
 <body>
 
-  <ng-include src="'partials/nav.html'"></ng-include>
+  <div class="nav">
+    <div class="navlinks">
+      <a href="/"><img class="header-img" src="images/logo.png" /></a>
+      <div class="nav-container">
+        <a href="index.html" class="item navlink">Home</a>
+        <a href="about.html" class="item navlink">About</a>
+        <a href="visit.html" class="active item navlink">Visit&nbsp;Us</a>
+        <a href="index.html#products" class="item navlink">Products</a>
+        <a href="faq.html" class="item navlink">FAQ</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <div class="ui main container">
