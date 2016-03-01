@@ -34,7 +34,17 @@
 
 <body>
 
+  <div id="fb-root"></div>
   <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=69518898450";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
     $('#show-sidebar').click(function() {
       $('.ui.sidebar')
         .sidebar('setting', 'transition', 'overlay')
@@ -70,9 +80,12 @@
 <header>
   <div id="show-sidebar" class="button toggler">
     MENU
-  </div> 
+  </div>
   <div id="logo">
     <img src="images/logo.png" />
+  </div>
+  <div id="toggle-view">
+    <i class="list layout icon"></i> VIEW
   </div>
 </header>
 
@@ -81,8 +94,8 @@
   <!-- Main Content -->
   <div class="ui main container">
     <h1 class="script">Estate & Vintage</h1> 
-    <p>Description of what Estate & Vintage means</p>   
-    <div class="ui grid">
+    <p><i>Description of Estate & Vintage</i></p>   
+    <div class="ui stackable grid">
 
       <div class="five wide column">
         <div class="ui list">
@@ -95,77 +108,87 @@
           <a class="item">Linda's Favorites</a>
           <a class="item">Deals</a>
         </div>
+
+        <div class="ui simple fluid dropdown">
+          <div class="text">REFINE</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="active item">Newest</div>
+            <div class="item">Name</div>
+            <div class="item">Price</div>
+          </div>
+        </div>
       </div>
 
 
       <div class="eleven wide column">
     
-        <div class="ui three column grid center aligned">
+        <div class="ui two column grid center aligned">
 
           <!-- Row 1 -->
           <div class="column">
-            <div class="ui card">
+            <div id="item1" class="ui card">
               <div class="image">
                 <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">ITEM</a>
+                <a class="header">E&V 1</a>
               </div>
             </div>
           </div>
 
           <div class="column">
-            <div class="ui card">
+            <div id="item2" class="ui card">
               <div class="image">
                 <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">ITEM</a>
+                <a class="header">E&V 2</a>
               </div>
             </div>
           </div>
 
           <div class="column">
-            <div class="ui card">
+            <div id="item3" class="ui card">
               <div class="image">
                 <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">ITEM</a>
+                <a class="header">E&V 3</a>
               </div>
             </div>
           </div>
 
           <div class="column">
-            <div class="ui card">
+            <div id="item4" class="ui card">
               <div class="image">
                 <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">ITEM</a>
+                <a class="header">E&V 4</a>
               </div>
             </div>
           </div>
 
           <!-- Row 2 -->
           <div class="column">
-            <div class="ui card">
+            <div id="item5" class="ui card">
               <div class="image">
                 <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">ITEM</a>
+                <a class="header">E&V 5</a>
               </div>
             </div>
           </div>
 
           <div class="column">
-            <div class="ui card">
+            <div id="item6" class="ui card">
               <div class="image">
                 <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">ITEM</a>
+                <a class="header">E&V 6</a>
               </div>
             </div>
           </div>
@@ -177,7 +200,137 @@
 
   </div>
 
+<div class="ui modal item1">
+  <i class="close icon"></i>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="item-desc">
+      <p class="item-title">Sterling Silver Art Nouveau Cuff</p>
+      <p class="item-subtitle">Circa 1960</p>
+      <p class="item-price">$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item2">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p class="ui center aligned">Sterling Silver Art Nouveau Cuff</p>
+      <p>Circa 1960</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item3">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item4">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item5">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item6">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+
   <ng-include src="'partials/footer.html'"></ng-include>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
+  <script>
+    $(function() {
+      $('#show-sidebar').click(function() {
+        $('.menu.sidebar').sidebar('toggle');
+      });
+
+      $('#hide-sidebar').click(function() {
+        $('.menu.sidebar').sidebar('toggle');
+      });
+    });
+
+    $(document).ready(function(){
+      $("#item1").click(function(){
+        $('.ui.modal.item1').modal('show');
+      });
+
+      $("#item2").click(function(){
+        $('.ui.modal.item2').modal('show');
+      });
+
+      $("#item3").click(function(){
+        $('.ui.modal.item3').modal('show');
+      });
+    
+      $("#item4").click(function(){
+        $('.ui.modal.item4').modal('show');
+      });
+
+      $("#item5").click(function(){
+        $('.ui.modal.item5').modal('show');
+      });
+
+      $("#item6").click(function(){
+        $('.ui.modal.item6').modal('show');
+      });
+    });
+  </script>
 
 </body>
 </html>
