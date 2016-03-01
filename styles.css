@@ -46,7 +46,8 @@ body {
 	height: 100% !important;
 }
 
-.active.item {
+a.active.item {
+    color:#1A65FC !important;
 }
 
 .ui.list.active.item {
@@ -67,6 +68,10 @@ body {
 	font-weight: bold;
 }
 
+.light-blue {
+    color:#1A65FC;
+}
+
 .div-center {
     text-align:center;
 }
@@ -74,6 +79,13 @@ body {
 .ui.card > .content {
     font-size:11px;
     letter-spacing: -1px;
+    margin-top:-15px;
+    background-color:#fff;
+    z-index:99;
+    opacity:0.90;
+}
+
+.ui.card > .content > a.header {
 }
 
 .item-desc {
