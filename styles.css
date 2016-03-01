@@ -63,12 +63,12 @@ body {
 	font-size:2em;
 }
 
-.navlinks a {
+.navlink>a {
 	padding:0 5%;
 	color:#d4d5f6;
 }
 
-.navlinks a:hover {
+.navlink>a:hover {
 	color:#fff;
 }
 

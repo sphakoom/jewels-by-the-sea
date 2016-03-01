@@ -70,7 +70,7 @@
           <div class="column">
             <div class="ui card">
               <div class="image">
-                <img src="http://placehold.it/200x200">
+                <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
                 <a class="header">ITEM</a>
@@ -81,7 +81,7 @@
           <div class="column">
             <div class="ui card">
               <div class="image">
-                <img src="http://placehold.it/200x200">
+                <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
                 <a class="header">ITEM</a>
@@ -92,7 +92,7 @@
           <div class="column">
             <div class="ui card">
               <div class="image">
-                <img src="http://placehold.it/200x200">
+                <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
                 <a class="header">ITEM</a>
@@ -103,7 +103,7 @@
           <div class="column">
             <div class="ui card">
               <div class="image">
-                <img src="http://placehold.it/200x200">
+                <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
                 <a class="header">ITEM</a>
@@ -126,7 +126,7 @@
           <div class="column">
             <div class="ui card">
               <div class="image">
-                <img src="http://placehold.it/200x200">
+                <img src="images/favorites/1-thumb.png">
               </div>
               <div class="content">
                 <a class="header">ITEM</a>
@@ -137,83 +137,11 @@
         </div>
       </div>
       
-
     </div>
-
 
   </div>
 
-  <!-- Footer -->
-  <div class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
-
-      <p>1237 Prospect Street, Suite B, La Jolla, CA 92037</p>
-      <p>858.459.5166</p>
-      <p>
-        <a href="http://www.yelp.com/biz/jewels-by-the-sea-la-jolla"><i class="fa fa-yelp fa-2x"></i></a>
-        <a href=""><i class="fa fa-facebook-square fa-2x"></i></a>
-        <a href=""><i class="fa fa-send fa-2x"></i></a>
-      </p>
-      <div id ="mymodalg"><a href="#">Newsletter Sign Up <big>&rarr;</big></i></a></div>
-      
-    </div>
-  </div>
-
-  <script>
-  $(document).ready(function(){
-    $("#mymodalg").click(function(){
-      $('.ui.modal.newsletter').modal('show');
-    });
-  });
-  </script>
-
-  <div class="ui modal newsletter">
-    <i class="close icon"></i>
-    <div class="header">
-      Jewels By The Sea Newsletter
-    </div>
-    <div class="content">
-      <p>Thanks for your interest in joining my mailing list!</p>
-
-
-      <form class="ui form" data-id="embedded_signup:form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
-        <!-- The following code must be included to ensure your sign-up form works properly. -->
-        <input data-id="ca:input" type="hidden" name="ca" value="e85ff487-535b-4265-8e08-5eaf8f66c2f4">
-        <input data-id="list:input" type="hidden" name="list" value="1">
-        <input data-id="source:input" type="hidden" name="source" value="EFD">
-        <input data-id="required:input" type="hidden" name="required" value="email,first_name">
-        <input data-id="url:input" type="hidden" name="url" value="">
-
-        <p data-id="Email Address:p" >
-          <input data-id="Email Address:input" type="text" name="email" value="" placeholder="Email Address" maxlength="80"></p>
-
-        <p data-id="First Name:p" >
-          <input data-id="First Name:input" type="text" name="first_name" value="" placeholder="Name" maxlength="50"></p>
-
-        <button class="ui button" type="submit" data-enabled="enabled">Sign Up</button>
-
-        <div class="ui segment center aligned"><small>By submitting this form, you are granting: Jewels by the Sea (1237 Prospect Street, La Jolla, California, 92037, United States, <i>http://www.jewelsbythesea.biz</i>) permission to email you. You may unsubscribe via the link found at the bottom of every email.  (See our <a href="http://www.constantcontact.com/legal/privacy-statement" target="_blank">Email Privacy Policy</a> for details.) Emails are serviced by Constant Contact.</small></div>
-       </form>
-   </div>
-  </div>
-
-<script type='text/javascript'>
-   var localizedErrMap = {};
-   localizedErrMap['required'] =    'This field is required.';
-   localizedErrMap['ca'] =      'An unexpected error occurred while attempting to send email.';
-   localizedErrMap['email'] =       'Please enter your email address in name@email.com format.';
-   localizedErrMap['birthday'] =    'Please enter birthday in MM/DD format.';
-   localizedErrMap['anniversary'] =   'Please enter anniversary in MM/DD/YYYY format.';
-   localizedErrMap['custom_date'] =   'Please enter this date in MM/DD/YYYY format.';
-   localizedErrMap['list'] =      'Please select at least one email list.';
-   localizedErrMap['generic'] =     'This field is invalid.';
-   localizedErrMap['shared'] =    'Sorry, we could not complete your sign-up. Please contact us to resolve this.';
-   localizedErrMap['state_mismatch'] = 'Mismatched State/Province and Country.';
-  localizedErrMap['state_province'] = 'Select a state/province';
-   localizedErrMap['selectcountry'] =   'Select a country';
-   var postURL = 'https://visitor2.constantcontact.com/api/signup';
-</script>
-<script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.0/js/signup-form.js'></script>
+  <ng-include src="'partials/footer.html'"></ng-include>
 
 </body>
 </html>
