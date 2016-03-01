@@ -105,7 +105,7 @@
   <div class="ui main container">
     <h1 class="script">Jewels By The Sea</h1>  
     <a name="products"></a>  
-    <div class="ui grid">
+    <div class="ui stackable grid">
       <div class="eleven wide column border-right">
 
         <div class="ui two column grid center aligned">
@@ -248,19 +248,19 @@
 
   <ng-include src="'partials/footer.html'"></ng-include>
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
- <script>
-         $(function() {
-    $('#show-sidebar').click(function() {
-      $('.menu.sidebar').sidebar('toggle');
-    });
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
+  <script>
+    $(function() {
+      $('#show-sidebar').click(function() {
+        $('.menu.sidebar').sidebar('toggle');
+      });
 
-    $('#hide-sidebar').click(function() {
-      $('.menu.sidebar').sidebar('toggle');
+      $('#hide-sidebar').click(function() {
+        $('.menu.sidebar').sidebar('toggle');
+      });
     });
-  });
-         </script>
+  </script>
 
 </div>
 
