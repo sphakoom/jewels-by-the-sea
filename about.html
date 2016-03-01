@@ -1,4 +1,4 @@
-<html lang="en" >
+<html lang="en" ng-app="">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -6,9 +6,10 @@
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <script src="semantic/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <title>Jewels By The Sea</title>
-
 
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/reset.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/components/site.css">
@@ -28,16 +29,7 @@
 
 <body>
 
-  <div class="nav">
-    <div class="navlinks">
-      <img class="header-img" src="images/logo.png" />
-      <a href="#" class="item">Home</a>
-      <a href="about.html" class="active item">About</a>
-      <a href="visit.html" class="item">Visit&nbsp;Us</a>
-      <a href="#" class="item">Products</a>
-      <a href="faq.html" class="item">FAQ</a>
-    </div>
-  </div>
+  <ng-include src="'partials/nav.html'"></ng-include>
 
 
   <!-- Main Content -->
@@ -51,6 +43,7 @@
 
     <p>I am a Graduate Gemologist with the Gemological Institute of America, and jewelry has been a passion for me since I was a little girl. Every special piece of wearable art in my shop was hand picked with loving care, and I truly enjoy sharing my knowledge and passion for beautiful jewelry of all kinds. I would like to extend a personal invitation for you to visit me at Jewels by the Sea - where I hope to enchant and delight you!</p>
     
+    <p>To learn more about how Jewels By The Sea became a reality for me, please check out a recent interview I did for <a href="http://www.unity.fm/episode/LetsGetNaked_022216">UnityFM</a>.</p>
 
   </div>
 
