@@ -63,7 +63,7 @@ body {
 /* fjdkls;aghj */
 header {
     width: 100%;
-    height: 75px;
+    height: 2em;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,12 +74,19 @@ header {
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
     transition: height 0.3s;
+    color:#fff;
+}
+
+#show-sidebar {
+    position:absolute;
+    top:5px;
+    left:5px;
 }
 
 #logo {
-	float:left;
-	width:10%;
-	margin-left:2%;
+	text-align:center;
+    float:left;
+	width:100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -88,7 +95,7 @@ header {
 }
 
 #logo img {
-	width:100%;
+	width:50px;
 }
 
 .nav-container {
@@ -111,7 +118,7 @@ a.navlink {
 a.navlink:hover {
 	color:#fff;
 }
-
+/*
 header.smaller {
     height: 25px;
    	font-size:0.5em;
@@ -178,3 +185,4 @@ header.smaller .nav-container a {
     }
 
 }
+*/
