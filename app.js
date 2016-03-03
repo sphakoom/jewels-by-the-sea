@@ -46,3 +46,16 @@ $(document).ready(function(){
 		$('#productGrid').addClass('ui three column grid center aligned');
 	}
 });
+
+$(window).resize(function() {
+
+    //Calculate the new height of your container
+    var $container = $('.fb-page');
+    var $iframe = $container.find('iframe');
+    $container.css('height',containerHeight+'px');
+    if($iframe.length) {
+        $iframe.attr('src',$iframe.attr('src').replace(/height=[0-9]+/gi,'height='+escape(containerHeight)));
+    } else {
+        $container.find('.fb-page').attr('data-height',containerHeight);
+    }
+});
