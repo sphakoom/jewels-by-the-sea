@@ -42,8 +42,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100% !important;
-	height: 100% !important;
+	width: 100%;
+	height: 100%;
 }
 
 a.active.item {
@@ -188,9 +188,9 @@ a.navlink:hover {
     .google-map iframe {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 75% !important;
-        height: 75% !important;
+        left: 15%;
+        width: 70%;
+        height: 70%;
     }
 }
 /*
