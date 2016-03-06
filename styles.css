@@ -31,7 +31,7 @@ body {
 
 @media only screen and (max-width: 660px) {
     .main.container {
-        padding-top:0em;
+        padding-top:1em;
     }
 }
 
@@ -321,17 +321,12 @@ a.navlink:hover {
         height: 70%;
     }
 
-    header {
-        height:2.5em;
-    }
-
     #logo img {
-        margin-top:7px;
-        width:50px;
+        margin-top:15px;
+        width:70px;
     }
 
     #show-sidebar {
-        line-height:2.5em;
     }
 }
 /*
