@@ -93,6 +93,14 @@ a.active.item {
     text-align:center;
 }
 
+.no-margin {
+    margin:0;
+}
+
+.no-bottom-margin {
+    margin-bottom:0;
+}
+
 .ui.card > .content {
     font-size:11px;
     letter-spacing: -1px;
@@ -127,6 +135,13 @@ a.active.item {
 .item-subtitle {
     text-align:left;
     font-size:1.2em;
+}
+
+.quote {
+    position:relative;
+    opacity:0.15;
+    margin:-1.75em -0.50em 0.50em 0;
+    line-height:3em;
 }
 
 /* Refine dropdown */
