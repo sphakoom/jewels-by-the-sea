@@ -11,6 +11,9 @@ $(function() {
 });
 
 $(document).ready(function(){
+
+  $('.ui.dropdown').dropdown();
+
   $("#item1").click(function(){
     $('.ui.modal.item1').modal('show');
   });
@@ -47,15 +50,31 @@ $(document).ready(function(){
 	}
 });
 
-$(window).resize(function() {
+jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
 
-    //Calculate the new height of your container
-    var $container = $('.fb-page');
-    var $iframe = $container.find('iframe');
-    $container.css('height',containerHeight+'px');
-    if($iframe.length) {
-        $iframe.attr('src',$iframe.attr('src').replace(/height=[0-9]+/gi,'height='+escape(containerHeight)));
-    } else {
-        $container.find('.fb-page').attr('data-height',containerHeight);
-    }
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
 });

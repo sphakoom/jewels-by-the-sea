@@ -107,10 +107,88 @@ a.active.item {
     text-align:left;
 }
 
-/* fjdkls;aghj */
+#toTop {
+    position:fixed;
+    text-align:center;
+    font-size:0.75em;
+    bottom:5;
+    right:5;
+    opacity:1;
+}
+
+.show {
+    opacity:1;
+}
+
+.bottom-grid-links {
+    text-align:center;
+    margin-top:1%;
+}
+
+.bottom-grid-links input{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Back to Top */
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 660px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+/* Header Elements*/
 header {
     width: 100%;
-    height: 2.5em;
+    height: 4em;
+    line-height:100%:;
     position: fixed;
     top: 0;
     left: 0;
@@ -126,12 +204,24 @@ header {
 
 .ui.vertical.menu {
     background-color: #08062b;
+    z-index:9999;
+}
+
+.ui.vertical.menu .item {
+    line-height:2;
+    font-size:1.2em;
+    letter-spacing:2px;
+}
+
+.ui.vertical.menu .item.menu-opener {
+    padding-bottom:2em;
 }
 
 #show-sidebar {
     position:absolute;
-    line-height:2.5em;
-    left:5px;
+    line-height:4em;
+    font-size:1em;
+    left:1em;
 }
 
 #toggle-view {
@@ -152,7 +242,7 @@ header {
 
 #logo img {
     margin-top:7px;
-	width:50px;
+	width:100px;
 }
 
 .nav-container {
@@ -184,6 +274,19 @@ a.navlink:hover {
         left: 15%;
         width: 70%;
         height: 70%;
+    }
+
+    header {
+        height:2.5em;
+    }
+
+    #logo img {
+        margin-top:7px;
+        width:50px;
+    }
+
+    #show-sidebar {
+        line-height:2.5em;
     }
 }
 /*
