@@ -2,12 +2,17 @@
 @import url(https://fonts.googleapis.com/css?family=Cookie);
 
 /*
- * #00093b - DARK BLUE - Used in header, footer
+ * #00093b - DARK BLUE (logo) - Used in header, footer
  * #D6E5DE - LIGHT GREEN - Used as accent, link hover
  */
 
 body {
 	font-family:'Montserrat';
+}
+
+.item-main {
+    font-size:1em !important;
+    text-transform: uppercase;
 }
 
 .script {
@@ -92,8 +97,10 @@ a.active.item {
 }
 
 .ui.card > .content > a.header {
+    font-size:2em;
 }
 
+/* Product Category Grids */
 .item-desc {
     text-align: center;
 }
@@ -114,6 +121,22 @@ a.active.item {
 .item-subtitle {
     text-align:left;
     font-size:1.2em;
+}
+
+/* Refine dropdown */
+.ui.dropdown {
+    width:100% !important;
+    border:none !important;
+    border-bottom:1px solid rgba(34, 36, 38, 0.1) !important;
+}
+
+.ui.selection.active.dropdown, .ui.selection.active.dropdown .menu {
+    border:1px solid rgba(34, 36, 38, 0.1) !important;
+    z-index:9999;
+}
+
+.dropdown-label {
+    margin-bottom:0;
 }
 
 #toTop {
