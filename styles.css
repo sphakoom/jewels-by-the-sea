@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Cookie);
 
+/*
+ * #00093b - DARK BLUE - Used in header, footer
+ * #D6E5DE - LIGHT GREEN - Used as accent, link hover
+ */
+
 body {
 	font-family:'Montserrat';
 }
@@ -16,12 +21,13 @@ body {
 
 .main.container {
     margin-top: 5em;
+    padding-top:3em;
 }
 
 .ui.footer.segment {
 	margin: 5em 0em 0em;
     padding: 5em 0em;
-	background-color:#08062b;
+	background-color:#00093b;
 }
 
 .footer {
@@ -95,16 +101,19 @@ a.active.item {
 .item-price {
     margin:0 auto 10px auto;
     width:80%;
+    font-size:1.2em;
     border-bottom:1px solid rgba(34, 36, 38, 0.1);
 }
 
 .item-title {
+    font-size:1.5em;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
 
 .item-subtitle {
     text-align:left;
+    font-size:1.2em;
 }
 
 #toTop {
@@ -193,7 +202,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: #08062b;
+    background-color: #00093b;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
@@ -203,7 +212,7 @@ header {
 }
 
 .ui.vertical.menu {
-    background-color: #08062b;
+    background-color: #00093b;
     z-index:9999;
 }
 
@@ -266,6 +275,13 @@ a.navlink:hover {
 	color:#fff;
 }
 
+/* FAQ page */
+.ui.segment {
+}
+
+.ui.secondary.segment {
+    background-color: #D6E5DE;
+}
 @media all and (max-width: 660px) {
     /* Resize Google Maps on small viewports*/
     .google-map iframe {

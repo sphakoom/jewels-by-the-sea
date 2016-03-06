@@ -37,6 +37,18 @@ $(document).ready(function(){
   $("#item6").click(function(){
     $('.ui.modal.item6').modal('show');
   });
+
+  $("#item7").click(function(){
+    $('.ui.modal.item7').modal('show');
+  });
+
+  $("#item8").click(function(){
+    $('.ui.modal.item8').modal('show');
+  });
+
+  $("#item9").click(function(){
+    $('.ui.modal.item9').modal('show');
+  });
 });
 
 $(document).ready(function(){
