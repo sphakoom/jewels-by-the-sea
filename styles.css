@@ -3,11 +3,16 @@
 
 /*
  * #00093b - DARK BLUE (logo) - Used in header, footer
+ * #7aa2cf - LIGHT BLUE - Used as link color
  * #D6E5DE - LIGHT GREEN - Used as accent, link hover
  */
 
 body {
 	font-family:'Montserrat';
+}
+
+a {
+    color:#7aa2cf;
 }
 
 .item-main {
@@ -42,10 +47,6 @@ body {
 }
 
 .footer {
-}
-
-.ui.card.content {
-    background-color:yellow;
 }
 
 .google-map {
@@ -101,13 +102,27 @@ a.active.item {
     margin-bottom:0;
 }
 
+.ui.blue.button {
+    background-color:#7aa2cf !important;
+}
+
+/* Individual card layouts */
+.product-item {
+    padding:1rem 0.5rem 1rem 0.5rem !important;
+}
+
+.ui.card {
+    box-shadow: none;
+    padding:0.5em;
+}
+
 .ui.card > .content {
     font-size:11px;
     letter-spacing: -1px;
-    margin-top:-15px;
     background-color:#fff;
     z-index:99;
-    opacity:0.90;
+    margin-top:0.5em;
+    border-top:3px solid #E2DEDC;
 }
 
 .ui.card > .content > a.header {
@@ -265,18 +280,39 @@ header {
     color:#fff;
 }
 
+/* Hamburger Menu Elements */
 .ui.vertical.menu {
     background-color: #00093b;
     z-index:9999;
 }
 
-.ui.vertical.menu .item {
+.ui.vertical.menu .menu-item {
+    display:block;
+    width:90%;
+    padding:1em 0.5em;
+    margin-left:5%;
     line-height:1.5em;
     font-size:1.1em;
-    letter-spacing:2px;
+    letter-spacing:1px;
+    font-family:'Montserrat';
+    border-top:1px solid #E2DEDC;
+    text-transform: uppercase;
+    color:#E2DEDC;
+    transition: background 0.1s ease 0s, box-shadow 0.1s ease 0s, color 0.1s ease 0s;
+}
+
+.ui.vertical.menu .menu-item:hover {
+    background-color:#000c4f;
+    transition: background 0.1s ease 0s, box-shadow 0.1s ease 0s, color 0.1s ease 0s;
+}
+
+
+.ui.vertical.menu .menu-item.first-item {
+    border-top:none;
 }
 
 .ui.vertical.menu .item.menu-opener {
+    font-family:'Montserrat';
     padding-bottom:2em;
 }
 
@@ -284,6 +320,7 @@ header {
     font-size:inherit;
     color:#fff;
     padding:0;
+    font-family:'Montserrat';
 }
 
 .ui.inverted.menu .dropdown.item.secondary, 
@@ -298,6 +335,8 @@ header {
     line-height:4em;
     font-size:1em;
     left:1em;
+    letter-spacing:1px;
+    font-family: 'Montserrat';
 }
 
 #toggle-view {
@@ -343,12 +382,25 @@ a.navlink:hover {
 }
 
 /* FAQ page */
+.faq-container .ui.segments {
+    margin:2em 0;
+}
+
 .ui.segment {
 }
 
 .ui.secondary.segment {
-    background-color: #D6E5DE;
+    background-color: #E2DEDC;
 }
+
+.faq-list a{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 @media all and (max-width: 660px) {
     /* Resize Google Maps on small viewports*/
     .google-map iframe {
