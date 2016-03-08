@@ -160,6 +160,10 @@ a.active.item {
     margin-bottom:0;
 }
 
+.ui.breadcrumb {
+    margin-bottom:1em;
+}
+
 #toTop {
     position:fixed;
     text-align:center;
