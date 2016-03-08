@@ -3,6 +3,7 @@ $(document).ready(function() {
 });
 
 function displayProducts() {
+  console.log('displayProducts');
   $.getJSON("products/estatevintage.json", function(data) { 
     console.log('Getting products...');
     var i = 0;  
