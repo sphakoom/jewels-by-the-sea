@@ -4,13 +4,62 @@
         "price": "$299.00",
         "img": "images/estatevintage/1.png",
         "thumb": "images/estatevintage/1-thumb.png",
-        "description": "Description"
+        "description": "Sterling Silver Art Nouveau design cuff bracelet. Circa 1960."
     },
     {
-        "name": "2 Art Nouveau Style Cuff",
-        "price": "$299.00",
-        "img": "images/estatevintage/1.png",
-        "thumb": "images/estatevintage/1-thumb.png",
-        "description": "Description"  
+        "name": "Onyx & Marcasite Ring",
+        "price": "$89.00",
+        "img": "images/estatevintage/2.png",
+        "thumb": "images/estatevintage/2-thumb.png",
+        "description": "Sterling silver onyx and marcasite ring. Circa 1970."
+    },
+    {
+        "name": "Hobe Gold-Tone Bracelet",
+        "price": "$129.00",
+        "img": "images/estatevintage/3.png",
+        "thumb": "images/estatevintage/3-thumb.png",
+        "description": "Signed \"Hobe\" gold tone and crystal bracelet. Circa 1950."
+    },
+    {
+        "name": "Lavalier Chain",
+        "price": "$229.00",
+        "img": "images/estatevintage/4.png",
+        "thumb": "images/estatevintage/4-thumb.png",
+        "description": "10 Karat yellow gold lavalier with seed pearl and synthetic spinel on a gold filled chain. Circa 1920."
+    },
+    {
+        "name": "Signed Copper Necklace",
+        "price": "$129.00",
+        "img": "images/estatevintage/5.png",
+        "thumb": "images/estatevintage/5-thumb.png",
+        "description": "Signed Renoir of California copper necklace. Circa 1960."
+    },
+    {
+        "name": "Sapphire Ring",
+        "price": "$1199.00",
+        "img": "images/estatevintage/6.png",
+        "thumb": "images/estatevintage/6-thumb.png",
+        "description": "18 Karat yellow gold Art Deco sapphire ring. Circa 1920."
+    },
+    {
+        "name": "Four Strand Necklace",
+        "price": "$49.00",
+        "img": "images/estatevintage/7.png",
+        "thumb": "images/estatevintage/7-thumb.png",
+        "description": "Four strand adjustable short necklace. Circa 1950."
+    },
+    {
+        "name": "Silver Earrings",
+        "price": "$69.00",
+        "img": "images/estatevintage/8.png",
+        "thumb": "images/estatevintage/8-thumb.png",
+        "description": "Sterling silver lapis earrings. Circa 1970."
+    },
+    {
+        "name": "Painted Buttons",
+        "price": "$39.00",
+        "img": "images/estatevintage/9.png",
+        "thumb": "images/estatevintage/9-thumb.png",
+        "description": "Hand painted buttons, set of 6. Circa 1960."
     }
 ]
