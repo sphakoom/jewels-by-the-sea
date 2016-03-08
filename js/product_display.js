@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function displayProducts() {
-  $.getJSON("/products/estatevintage.json", function(data) { 
+  $.getJSON("products/estatevintage.json", function(data) { 
     var i = 0;  
     $.each(data.result, function(){    
       var name =  this['name'];
