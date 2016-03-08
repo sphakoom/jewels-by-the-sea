@@ -6,8 +6,7 @@ function displayProducts() {
   console.log('displayProducts');
   $.getJSON("products/estatevintage.json", function(data) {  
     console.log(data);
-    console.log(data.result);
-    $.each(data.result, function(){    
+    $.each(data, function(){    
       var name =  this['name'];
       var thumb = this['thumb'];
 
