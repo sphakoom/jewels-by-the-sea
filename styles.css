@@ -270,13 +270,26 @@ header {
 }
 
 .ui.vertical.menu .item {
-    line-height:2;
-    font-size:1.2em;
+    line-height:1.5em;
+    font-size:1.1em;
     letter-spacing:2px;
 }
 
 .ui.vertical.menu .item.menu-opener {
     padding-bottom:2em;
+}
+
+.ui.accordion .title:not(.ui){
+    font-size:inherit;
+    color:#fff;
+    padding:0;
+}
+
+.ui.inverted.menu .dropdown.item.secondary, 
+.ui.inverted.menu .link.item.secondary, 
+.ui.inverted.menu a.item.secondary, 
+.ui.link.inverted.menu .item.secondary {
+    font-size:0.8em;
 }
 
 #show-sidebar {

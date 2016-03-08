@@ -11,10 +11,21 @@ $(function() {
 });
 
 $(document).ready(function(){
+	if( window.innerWidth <= 660 ) {
+		console.log('mobile');
+		$('#productGrid').addClass('ui two column grid center aligned');
+	}
+	else {
+		console.log('desktop');
+		$('#productGrid').addClass('ui three column grid center aligned');
+	}
 
   $('.ui.dropdown').dropdown();
 
+  $('.ui.accordion').accordion();
+
   $("#item1").click(function(){
+    console.log('here');
     $('.ui.modal.item1').modal('show');
   });
 
@@ -49,17 +60,6 @@ $(document).ready(function(){
   $("#item9").click(function(){
     $('.ui.modal.item9').modal('show');
   });
-});
-
-$(document).ready(function(){
-	if( window.innerWidth <= 660 ) {
-		console.log('mobile');
-		$('#productGrid').addClass('ui two column grid center aligned');
-	}
-	else {
-		console.log('desktop');
-		$('#productGrid').addClass('ui three column grid center aligned');
-	}
 });
 
 jQuery(document).ready(function($){
