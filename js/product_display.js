@@ -3,8 +3,14 @@ $(document).ready(function() {
 });
 
 function displayProducts() {
-  console.log('displayProducts');
-  $.getJSON("products/estatevintage.json", function(data) {  
+  
+  var url = window.location.pathname;
+  var category = "products/"+ url.replace("html", "json");
+
+  console.log(url);
+  console.log(category);
+
+  $.getJSON(category, function(data) {  
     console.log(data);
     $.each(data, function(){    
       var name =  this['name'];

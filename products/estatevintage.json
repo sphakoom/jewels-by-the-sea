@@ -2,15 +2,15 @@
     {
         "name": "Art Nouveau Style Cuff",
         "price": "$299.00",
-        "img": "/images/estatevintage/1.png",
-        "thumb": "/images/estatevintage/1-thumb.png",
+        "img": "images/estatevintage/1.png",
+        "thumb": "images/estatevintage/1-thumb.png",
         "description": "Description"
     },
     {
         "name": "2 Art Nouveau Style Cuff",
         "price": "$299.00",
-        "img": "/images/estatevintage/1.png",
-        "thumb": "/images/estatevintage/1-thumb.png",
+        "img": "images/estatevintage/1.png",
+        "thumb": "images/estatevintage/1-thumb.png",
         "description": "Description"  
     }
 ]
