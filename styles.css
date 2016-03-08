@@ -17,7 +17,7 @@ a {
 
 .item-main {
     font-size:1em !important;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .script {
@@ -116,21 +116,20 @@ a.active.item {
 }
 
 .ui.card {
-    box-shadow: none;
-    padding:0.5em;
 }
 
 .ui.card > .content {
     font-size:11px;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     background-color:#fff;
     z-index:99;
-    margin-top:0.5em;
     border-top:3px solid #E2DEDC;
+    background-color:#7aa2cf;
 }
 
 .ui.card > .content > a.header {
     font-size:2em;
+    color:#fff;
 }
 
 /* Product Category Grids */
@@ -165,7 +164,7 @@ a.active.item {
     position:relative;
     opacity:0.15;
     margin:-1.75em -0.50em 0.50em 0;
-    line-height:3em;
+    line-height:1em;
 }
 
 /* Refine dropdown */
