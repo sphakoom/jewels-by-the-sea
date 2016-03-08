@@ -4,7 +4,7 @@
 /*
  * #00093b - DARK BLUE (logo) - Used in header, footer
  * #7aa2cf - LIGHT BLUE - Used as link color
- * #D6E5DE - LIGHT GREEN - Used as accent, link hover
+ * #E2DEDC - LIGHT SAND COLOR - Used as accent
  */
 
 body {
@@ -106,9 +106,13 @@ a.active.item {
     background-color:#7aa2cf !important;
 }
 
+.ui.blue.button:hover{
+    background-color:#00093b !important;
+}
+
 /* Individual card layouts */
 .product-item {
-    padding:1rem 0.5rem 1rem 0.5rem !important;
+    padding:0.8rem 0.5rem 0.8rem 0.5rem !important;
 }
 
 .ui.card {
@@ -381,6 +385,15 @@ a.navlink:hover {
 	color:#fff;
 }
 
+/* Hours page */
+.store-days {
+    color:#00093B;
+}
+.store-hours {
+    color: #7aa2cf; 
+    background-color:#E2DEDC
+}
+
 /* FAQ page */
 .faq-container .ui.segments {
     margin:2em 0;
@@ -406,8 +419,6 @@ a.navlink:hover {
     .google-map iframe {
         position: absolute;
         top: 0;
-        left: 15%;
-        width: 70%;
         height: 70%;
     }
 
