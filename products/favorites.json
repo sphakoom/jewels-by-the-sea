@@ -1,0 +1,65 @@
+﻿[   
+   {
+       "name": "Whimsical Octopus Pendant",
+       "price": "$69.00",
+       "img": "images/favorites/1-full.png",
+       "thumb": "images/favorites/1-thumb.png",
+       "description": "Lovely pendant/brooch on strap."
+   },
+   {
+       "name": "Seahorse Pendant",
+       "price": "$899.00",
+       "img": "images/favorites/2-full.png",
+       "thumb": "images/lindafaves/2-thumb.png",
+       "description": "Handmade, 6\" high sterling silver seahorse &mdash; guaranteed compliments!"
+   },
+   {
+       "name": "Classic Pearl Strand Necklace",
+       "price": "$129.00",
+       "img": "images/favorites/3-full.png",
+       "thumb": "images/favorites/3-thumb.png",
+       "description": "64\" long, knotted pearl strand."
+   },
+   {
+       "name": "Fire Opal & Lapis Ring",
+       "price": "$79.00",
+       "img": "images/favorites/4-full.png",
+       "thumb": "images/favorites/4-thumb.png",
+       "description": "Sterling silver inlay fire opal and lapis."
+   },
+   {
+       "name": "Tree of Life Set",
+       "price": "$69.00",
+       "img": "images/favorites/5-full.png",
+       "thumb": "images/favorites/5-thumb.png",
+       "description": "Sterling silver ‘Tree of Life’ necklace and earrings. Comes as a set."
+   },
+   {
+       "name": "Sculptural Starfish Necklace",
+       "price": "$69.00",
+       "img": "images/favorites/6-full.png",
+       "thumb": "images/favorites/6-thumb.png",
+       "description": "Sculptural sterling silver starfish on chain."
+   },
+   {
+       "name": "Peacock Brooch",
+       "price": "$59.00",
+       "img": "images/favorites/7-full.png",
+       "thumb": "images/favorites/7-thumb.png",
+       "description": "Major bling (5\" high) peacock brooch."
+   },
+   {
+       "name": "Handmade Aluminum Earrings",
+       "price": "$59.00",
+       "img": "images/favorites/8-full.png",
+       "thumb": "images/favorites/8-thumb.png",
+       "description": "Lightweight and artistic."
+   },
+   {
+       "name": "Victorian Serpent w/ Cat’s Eye Ring",
+       "price": "$1,999.00",
+       "img": "images/favorites/9-full.png",
+       "thumb": "images/favorites/9-thumb.png",
+       "description": "18 karat yellow gold Victorian serpent/dragon design complete with cat’s eye."
+   }
+]
