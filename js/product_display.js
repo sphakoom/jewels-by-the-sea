@@ -4,10 +4,13 @@ $(document).ready(function() {
 
 function displayProducts() {
   $.getJSON("products/estatevintage.json", function(data) { 
+    console.log('Getting products...');
     var i = 0;  
     $.each(data.result, function(){    
       var name =  this['name'];
       var thumb = this['thumb'];
+
+      console.log(name);
 
       $("#productGrid").append(
         "<div class='column'><div id='item'" + i 
