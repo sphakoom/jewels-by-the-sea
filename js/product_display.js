@@ -4,9 +4,7 @@ $(document).ready(function() {
 
 function displayProducts() {
   console.log('displayProducts');
-  $.getJSON("products/estatevintage.json", function(data) { 
-    console.log('Getting products...');
-    var i = 0;  
+  $.getJSON("products/estatevintage.json", function(data) {  
     $.each(data.result, function(){    
       var name =  this['name'];
       var thumb = this['thumb'];
@@ -14,12 +12,15 @@ function displayProducts() {
       console.log(name);
 
       $("#productGrid").append(
-        "<div class='column'><div id='item'" + i 
+        "<div class='column'><div id='item'" + 1 
         + " class='ui card'><div class='image'><img src='"+ thumb + "'>"
         + "</div><div class='content'><a class='header'>" + name 
         + "</a></div></div></div>");
       
     });
+  })
+  .error(function(data){
+    console.log('error!');
   });
 };
 
