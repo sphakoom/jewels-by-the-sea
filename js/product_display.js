@@ -5,7 +5,7 @@ $(document).ready(function() {
 function displayProducts() {
   
   var url = window.location.pathname;
-  var category = "products/"+ url.replace("html", "json");
+  var category = "products/"+ url.substr(url.lastIndexOf('/')).replace("html", "json");
 
   console.log(url);
   console.log(category);
