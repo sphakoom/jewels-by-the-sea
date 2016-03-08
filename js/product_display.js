@@ -29,7 +29,7 @@ function displayProducts() {
         + "<img class='ui centered image' src='"+ img +"'>"
         + "<div class='item-desc'>"
         + "<p class='item-title'>" + name + "</p>"
-        + "<p class='item-subtitle'>" + description + "</p>"
+        + "<p class='item-subtitle'>" + desc + "</p>"
         + "<p class='item-price'>" + price + "</p>"
         + "<button class='ui blue button'>Inquire</button></div></div></div>"
         );
