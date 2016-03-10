@@ -529,6 +529,10 @@ a.navlink:hover {
         line-height:3em;
     }
 
+    #faqimg {
+        display:none;
+    }
+
     header {
         height:3em;
     }
