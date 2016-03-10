@@ -16,25 +16,22 @@
 
   <script src="classie.js"></script>
   <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 250,
-                  logo = document.querySelector("#logoimg");
-              console.log('scrolling');
-              if (distanceY > shrinkOn) {
-                  console.log('smaller!');
-                  classie.add(logo,"smaller");
-              } else {
-                  console.log('bigger!');
-                  if (classie.has(logo,"smaller")) {
-                      classie.remove(logo,"smaller");
-                  }
-              }
-          });
-      }
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 250,
+                logo = document.querySelector("#logoimg");
+            if (distanceY > shrinkOn) {
+                classie.add(logo,"smaller");
+            } else {
+                if (classie.has(logo,"smaller")) {
+                    classie.remove(logo,"smaller");
+                }
+            }
+        });
+    }
 
-      window.onload = init();
+    window.onload = init();
   </script>
 </head>
 
@@ -112,14 +109,15 @@
     </a>
     <div class="ui popup bottom right transition hidden">
       <div class="ui link list">
-        <a class="item">Estate & Vintage</a>
-        <a class="item">Artists</a>
-        <a class="item">Rings</a>
-        <a class="item">Earrings</a>
-        <a class="item">Linda's Favorites</a>
-        <a class="item">Scarves</a>
-        <a class="item">Necklaces</a>
-        <a class="item">Deals</a>
+        <a class="item" href="estatevintage.html">Estate & Vintage</a>
+        <a class="item" href="artists.html">Artists</a>
+        <a class="item" href="rings.html">Rings</a>
+        <a class="item" href="earrings.html">Earrings</a>
+        <a class="item" href="favorites.html">Linda's Favorites</a>
+        <a class="item" href="bracelets.html">Bracelets</a>
+        <a class="item" href="scarves.html">Scarves</a>
+        <a class="item" href="necklaces.html">Necklaces & Pendants</a>
+        <a class="item" href="deals.html">Deals</a>
       </div>
     </div>
     <a class="item" href="faq.html">FAQ</a>

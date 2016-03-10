@@ -14,21 +14,27 @@
 
   <script src="classie.js"></script>
   <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 250,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 250,
+                logo = document.querySelector("#logoimg"),
+                toTop = document.querySelector("#toTop");
+
+            if (distanceY > shrinkOn) {
+                classie.add(logo,"smaller");
+                classie.add(toTop, "show");
+            } else {
+                if (classie.has(logo,"smaller")) {
+                    classie.remove(logo,"smaller");
+                }
+                if(classie.has(toTop, "show")) {
+                  classie.remove(toTop, "show");
+                }
+            }
+        });
+    }
+    window.onload = init();
   </script>
 </head>
 
@@ -87,7 +93,7 @@
 
   <!-- BEGIN DESKTOP HEADER -->
   <div id="navbar">
-    <a class="item">HOME</a>
+    <a class="item" href="index.html">HOME</a>
     <a class="item" href="about.html">ABOUT</a>
     <a class="item" href="visit.html">VISIT</a>
     <a class="nav-products item">
@@ -262,7 +268,10 @@
     </div>
   </div>
 
-  <a href="#0" id="toTop"><i class="chevron up icon"></i> <br />Back to Top</a>
+  <a href="#0" id="toTop">
+    &nbsp;<i class="chevron up icon"></i> <br />
+    <span class="topText">Back To Top</span>
+  </a>
 
   <ng-include src="'partials/footer.html'"></ng-include>
 
@@ -272,7 +281,7 @@
   <script>
     $(function() {
       var toTop = document.getElementById("toTop");
-      
+
       $('#show-sidebar').click(function() {
         $('.menu.sidebar').sidebar('toggle');
       });
@@ -292,6 +301,15 @@
     
     $('.ui.dropdown').dropdown();
     $('.ui.accordion').accordion();
+    $('.nav-products').popup({
+      inline   : true,
+      hoverable: true,
+      position : 'bottom right',
+      delay: {
+        show: 300,
+        hide: 800
+      }
+    });
   </script>
 
 </body>

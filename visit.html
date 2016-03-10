@@ -14,21 +14,21 @@
 
   <script src="classie.js"></script>
   <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 250,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 250,
+                logo = document.querySelector("#logoimg");
+            if (distanceY > shrinkOn) {
+                classie.add(logo,"smaller");
+            } else {
+                if (classie.has(logo,"smaller")) {
+                    classie.remove(logo,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
   </script>
 </head>
 
@@ -45,13 +45,13 @@
 
 <!-- BEGIN MOBILE HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <a class="menu-item first-item" href="#">
+  <a class="menu-item first-item" href="index.html">
     Home
   </a>
   <a class="menu-item" href="about.html">
     About
   </a>
-  <a class="menu-item" href="visit.html">
+  <a class="menu-item" href="#">
     Visit Us
   </a>
   <div class="ui vertical fluid accordion menu-item">
