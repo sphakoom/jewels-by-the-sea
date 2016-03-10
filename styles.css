@@ -172,7 +172,6 @@ a.active.item {
     letter-spacing: 0px;
     background-color:#fff;
     z-index:99;
-    border-top:3px solid #E2DEDC;
     /*background-color:#7aa2cf;*/
 }
 
