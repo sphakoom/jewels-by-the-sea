@@ -115,7 +115,4 @@ jQuery(document).ready(function($){
 		 	}, scroll_top_duration
 		);
 	});
-
-
-
 });

@@ -43,10 +43,10 @@
     });
   </script>
 
-<!-- BEGIN HEADER -->
+<!-- BEGIN MOBILE HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <a class="active menu-item first-item">
-    Menu
+  <a class="menu-item first-item" href="index.html">
+    Home
   </a>
   <a class="menu-item" href="about.html">
     About
@@ -72,19 +72,42 @@
     </div>
   </div>
 
-  <a class="menu-item" href="faq.html">
+  <a class="menu-item" href="#">
     FAQ
   </a>
 </div>
 
-
 <header>
   <div id="show-sidebar" class="button toggler">
     MENU
-  </div> 
-  <div id="logo">
-    <a href="index.html"><img src="images/logo.png" /></a>
   </div>
+  <div id="logo">
+    <a href="index.html"><img id="logoimg" src="images/logo.png"/></a>
+  </div>
+
+  <!-- BEGIN DESKTOP HEADER -->
+  <div id="navbar">
+    <a class="item">HOME</a>
+    <a class="item" href="about.html">ABOUT</a>
+    <a class="item" href="visit.html">VISIT</a>
+    <a class="nav-products item">
+      PRODUCTS
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup bottom right transition hidden">
+      <div class="ui link list">
+        <a class="item">Estate & Vintage</a>
+        <a class="item">Artists</a>
+        <a class="item">Rings</a>
+        <a class="item">Earrings</a>
+        <a class="item">Linda's Favorites</a>
+        <a class="item">Scarves</a>
+        <a class="item">Necklaces</a>
+        <a class="item">Deals</a>
+      </div>
+    </div>
+    <a class="active item" href="faq.html">FAQ</a>
+  </div> 
 </header>
 <!-- END HEADER -->
 
@@ -105,12 +128,12 @@
 
     <div class="faq-container">
     <div class="ui list faq-list div-center">
-      <a class="item" href="#1" target="_self">What is the difference between estate, vintage, and antique jewelry?</a>
-      <a class="item" href="#2" target="_self">Does Jewels By The Sea create custom jewelry?</a>
-      <a class="item" href="#3" target="_self">Does Jewels By The Sea do jewelry repair?</a>
-      <a class="item" href="#4" target="_self">What is a Graduate Gemologist?</a>
-      <a class="item" href="#5" target="_self">Where does your jewelry come from?</a>
-      <a class="item" href="#6" target="_self">How do I take care of my jewelry?</a>
+      <a class="item toScroll" href="#1" target="_self">What is the difference between estate, vintage, and antique jewelry?</a>
+      <a class="item toScroll" href="#2" target="_self">Does Jewels By The Sea create custom jewelry?</a>
+      <a class="item toScroll" href="#3" target="_self">Does Jewels By The Sea do jewelry repair?</a>
+      <a class="item toScroll" href="#4" target="_self">What is a Graduate Gemologist?</a>
+      <a class="item toScroll" href="#5" target="_self">Where does your jewelry come from?</a>
+      <a class="item toScroll" href="#6" target="_self">How do I take care of my jewelry?</a>
     </div>
 
     <a id="1"></a> 
@@ -239,12 +262,17 @@
     </div>
   </div>
 
+  <a href="#0" id="toTop"><i class="chevron up icon"></i> <br />Back to Top</a>
+
   <ng-include src="'partials/footer.html'"></ng-include>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
+  <script src="js/anchor.js"></script>
   <script>
     $(function() {
+      var toTop = document.getElementById("toTop");
+      
       $('#show-sidebar').click(function() {
         $('.menu.sidebar').sidebar('toggle');
       });
@@ -252,6 +280,14 @@
       $('#hide-sidebar').click(function() {
         $('.menu.sidebar').sidebar('toggle');
       });
+    });
+    
+    //smooth scroll to top
+    $(toTop).on('click', function(event){
+      event.preventDefault();
+      $('body,html').animate({
+        scrollTop: 0 ,
+        }, 700);
     });
     
     $('.ui.dropdown').dropdown();

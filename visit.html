@@ -43,10 +43,10 @@
     });
   </script>
 
-<!-- BEGIN HEADER -->
+<!-- BEGIN MOBILE HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <a class="active menu-item first-item" href="index.html">
-    Menu
+  <a class="menu-item first-item" href="#">
+    Home
   </a>
   <a class="menu-item" href="about.html">
     About
@@ -77,14 +77,37 @@
   </a>
 </div>
 
-
 <header>
   <div id="show-sidebar" class="button toggler">
     MENU
-  </div> 
-  <div id="logo">
-    <a href="index.html"><img src="images/logo.png" /></a>
   </div>
+  <div id="logo">
+    <a href="index.html"><img id="logoimg" src="images/logo.png"/></a>
+  </div>
+
+  <!-- BEGIN DESKTOP HEADER -->
+  <div id="navbar">
+    <a class="item" href="index.html">HOME</a>
+    <a class="item" href="about.html">ABOUT</a>
+    <a class="active item" href="#">VISIT</a>
+    <a class="nav-products item">
+      PRODUCTS
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup bottom right transition hidden">
+      <div class="ui link list">
+        <a class="item">Estate & Vintage</a>
+        <a class="item">Artists</a>
+        <a class="item">Rings</a>
+        <a class="item">Earrings</a>
+        <a class="item">Linda's Favorites</a>
+        <a class="item">Scarves</a>
+        <a class="item">Necklaces</a>
+        <a class="item">Deals</a>
+      </div>
+    </div>
+    <a class="item" href="faq.html">FAQ</a>
+  </div> 
 </header>
 <!-- END HEADER -->
 
@@ -100,7 +123,7 @@
         <h3 class="script">Hours & Location</h3>
 
         <div class="ui two column grid store-hours">
-          <div class="column right aligned bold-text">
+          <div class="column right aligned store-days bold-text">
             <p>MONDAY</p>
             <p>TUESDAY</p>
             <p>WEDNESDAY - SATURDAY</p>
@@ -153,6 +176,15 @@
 
     $('.ui.dropdown').dropdown();
     $('.ui.accordion').accordion();
+    $('.nav-products').popup({
+      inline   : true,
+      hoverable: true,
+      position : 'bottom right',
+      delay: {
+        show: 300,
+        hide: 800
+      }
+    });
   </script>
 
 </body>
