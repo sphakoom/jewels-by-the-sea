@@ -20,16 +20,20 @@
           window.addEventListener('scroll', function(e){
               var distanceY = window.pageYOffset || document.documentElement.scrollTop,
                   shrinkOn = 250,
-                  header = document.querySelector("header");
+                  logo = document.querySelector("#logoimg");
+              console.log('scrolling');
               if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
+                  console.log('smaller!');
+                  classie.add(logo,"smaller");
               } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
+                  console.log('bigger!');
+                  if (classie.has(logo,"smaller")) {
+                      classie.remove(logo,"smaller");
                   }
               }
           });
       }
+
       window.onload = init();
   </script>
 </head>
@@ -95,7 +99,7 @@
     MENU
   </div> 
   <div id="logo">
-    <a href="index.html"><img src="images/logo.png" /></a>
+    <a href="index.html"><img id="logoimg" src="images/logo.png"/></a>
   </div>
 </header>
 <!-- END HEADER -->

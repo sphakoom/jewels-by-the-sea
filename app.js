@@ -10,6 +10,7 @@ $(function() {
   });
 });
 
+
 $(document).ready(function(){
 	if( window.innerWidth <= 660 ) {
 		console.log('mobile');
@@ -56,6 +57,36 @@ $(document).ready(function(){
   $("#item9").click(function(){
     $('.ui.modal.item9').modal('show');
   });
+});
+
+$(window).on('resize', '#productGrid', function(){
+  var shrinkOn = 660;
+  var $grid = $('#productGrid');
+  var width = window.innerWidth || document.documentElement.clientWidth;
+  console.log('resize!');
+
+  // Mobile
+  if( width < shrinkOn ) {
+    console.log('resized to mobile');
+    if($grid.is('.ui', '.three', '.column', '.grid', '.center', '.aligned')) {
+      console.log('has!');
+      $grid.removeClass('ui three column grid center aligned');
+      console.log('removed class');
+      $grid.addClass('ui two column grid center aligned');
+      console.log('added class')
+    }
+  }
+  // Desktop
+  else {
+    console.log('resized to desktop');
+    if($grid.is('.ui', '.two', '.column', '.grid', '.center', '.aligned')) {
+      console.log('has!');
+      $grid.removeClass('ui two column grid center aligned');
+      console.log('removed class');
+      $grid.addClass('ui three column grid center aligned');
+      console.log('added class')
+    }
+  }
 });
 
 jQuery(document).ready(function($){

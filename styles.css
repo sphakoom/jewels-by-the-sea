@@ -90,7 +90,7 @@ a.active.item {
     position:absolute;
     width:100%;
     height:100%;
-    font-size:2.2em;
+    font-size:1.5em;
     line-height:1em;
     display: flex;
     text-transform:uppercase;
@@ -119,7 +119,6 @@ a.active.item {
 
 @media only screen and (max-width:660px) {
     .grid-hover {
-        font-size:1.5em;
     }
 }
 
@@ -180,6 +179,7 @@ a.active.item {
     font-size:2em;
     /*color:#7aa2cf;*/
     color:#00093B;
+    text-transform: uppercase;
 }
 
 /* Product Category Grids */
@@ -299,6 +299,7 @@ a.active.item {
   background-color: #e86256;
   opacity: 1;
 }
+
 @media only screen and (min-width: 660px) {
   .cd-top {
     right: 20px;
@@ -313,7 +314,6 @@ a.active.item {
     bottom: 30px;
   }
 }
-
 
 /* Header Elements*/
 header {
@@ -480,16 +480,33 @@ a.navlink:hover {
     #logo img {
         margin-top:15px;
         width:70px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
     }
 
     #show-sidebar {
+        line-height:3em;
+    }
+
+    header {
+        height:3em;
+    }
+
+    .smaller {
+        margin-top:0px !important;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
     }
 }
+
+
 /*
-header.smaller {
-    height: 25px;
-   	font-size:0.5em;
-}
 header.smaller #logo {
     width: 50px;
     height: 50px;
