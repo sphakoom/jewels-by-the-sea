@@ -1,0 +1,65 @@
+﻿[
+   {
+       "name": "Swarovski Crystal Element Hoops",
+       "price": "$39.00 ea.",
+       "img": "images/earrings/1-full.png",
+       "thumb": "images/earrings/1-thumb.png",
+       "description": "Simple hoops made with Swarovski crystal elements, available on all colors."
+   },
+   {
+       "name": "Gold-plated Amethyst & Pearl Earrings",
+       "price": "$69.00",
+       "img": "images/earrings/2-full.png",
+       "thumb": "images/earrings/2-thumb.png",
+       "description": "18 karat gold-plated amethyst and pearls from Brazil."
+   },
+   {
+       "name": "Sterling Silver Drops",
+       "price": "$39.00",
+       "img": "images/earrings/3-full.png",
+       "thumb": "images/earrings/3-thumb.png",
+       "description": "Sterling silver hammered and bright drop earrings."
+   },
+   {
+       "name": "Gray Pearl Drops",
+       "price": "$20.00",
+       "img": "images/earrings/4-full.png",
+       "thumb": "images/earrings/4-thumb.png",
+       "description": "Pear-shaped gray pearl & silver drops"
+   },
+   {
+       "name": "Etruscan Revival Drops",
+       "price": "$599.00",
+       "img": "images/earrings/5-full.png",
+       "thumb": "images/earrings/5-thumb.png",
+       "description": "14 karat yellow gold Etruscan revival drop earrings. Circa 1920s."
+   },
+   {
+       "name": "Tahitian Pearl & Diamond Earrings",
+       "price": "$699.00",
+       "img": "images/earrings/6-full.png",
+       "thumb": "images/earrings/6-thumb.png",
+       "description": "14 karat white gold Tahitian pearl and diamonds."
+   },
+   {
+       "name": "Fire Opal Starfish Earrings",
+       "price": "$69.00",
+       "img": "images/earrings/7-full.png",
+       "thumb": "images/earrings/7-thumb.png",
+       "description": "Sterling silver fire and  opal starfish earrings."
+   },
+   {
+       "name": "Sterling Silver Amethyst Drops",
+       "price": "$39.00",
+       "img": "images/earrings/8-full.png",
+       "thumb": "images/earrings/8-thumb.png",
+       "description": "Drop earrings made of sterling silver and amethyst."
+   },
+   {
+       "name": "Saturn Earrings",
+       "price": "$19.00",
+       "img": "images/earrings/9-full.png",
+       "thumb": "images/earrings/9-thumb.png",
+       "description": "Saturn-shaped earrings with silver wires."
+   }
+]

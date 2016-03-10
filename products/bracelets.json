@@ -1,0 +1,65 @@
+﻿[
+   {
+       "name": "Funky Ruby & Watch Bracelet",
+       "price": "$229.00",
+       "img": "images/bracelets/1-full.png",
+       "thumb": "images/bracelets/1-thumb.png",
+       "description": "Funky and fun handmade raw ruby and recycled watches."
+   },
+   {
+       "name": "Cabochon Onyx Cuff",
+       "price": "$59.00",
+       "img": "images/bracelets/2-full.png",
+       "thumb": "images/bracelets/2-thumb.png",
+       "description": "Handmade tricolor metal with onyx cabochon cuff."
+   },
+   {
+       "name": "Sterling Silver Textured Link",
+       "price": "$59.00",
+       "img": "images/bracelets/3-full.png",
+       "thumb": "images/bracelets/3-thumb.png",
+       "description": "Textured link bracelet made from sterling silver."
+   },
+   {
+       "name": "Fire Opal Link",
+       "price": "$99.00",
+       "img": "images/bracelets/4-full.png",
+       "thumb": "images/bracelets/4-thumb.png",
+       "description": "Sterling silver and fire opal 7’’ link bracelet."
+   },
+   {
+       "name": "Prehnite Stretch Bracelet",
+       "price": "$39.00",
+       "img": "images/bracelets/5-full.png",
+       "thumb": "images/bracelets/5-thumb.png",
+       "description": "Wide stretch bracelet made from prehnite."
+   },
+   {
+       "name": "Turquoise Link Bracelet",
+       "price": "$129.00",
+       "img": "images/bracelets/6-full.png",
+       "thumb": "images/bracelets/6-thumb.png",
+       "description": “Sterling silver and turquoise link."
+   },
+   {
+       "name": “Lavender Jade Bracelet",
+       "price": "$139.00",
+       "img": "images/bracelets/7-full.png",
+       "thumb": "images/bracelets/7-thumb.png",
+       "description": “Bracelet made from sterling silver and lavender jade."
+   },
+   {
+       "name": “Chalcedony Quartz & Agate Bracelet",
+       "price": "$49.00",
+       "img": "images/bracelets/8-full.png",
+       "thumb": "images/bracelets/8-thumb.png",
+       "description": "Chalcedony quartz and agate bracelet made by Nicole."
+   },
+   {
+       "name": "Sterling Silver & Cubic Zirconia Bracelet",
+       "price": "$79.00",
+       "img": "images/bracelets/9-full.png",
+       "thumb": "images/bracelets/9-thumb.png",
+       "description": "Saturn-shaped earrings with silver wires."
+   }
+]
