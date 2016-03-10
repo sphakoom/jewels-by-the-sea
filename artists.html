@@ -1,0 +1,390 @@
+<html lang="en" ng-app="">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link rel='stylesheet' href='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" type-"text/css" href="styles.css">
+
+  <title>Jewels By The Sea</title>
+
+  <script src="classie.js"></script>
+  <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 250,
+                logo = document.querySelector("#logoimg"),
+                toTop = document.querySelector("#toTop");
+
+            if (distanceY > shrinkOn) {
+                classie.add(logo,"smaller");
+                classie.add(toTop, "show");
+            } else {
+                if (classie.has(logo,"smaller")) {
+                    classie.remove(logo,"smaller");
+                }
+                if(classie.has(toTop, "show")) {
+                  classie.remove(toTop, "show");
+                }
+            }
+        });
+    }
+    window.onload = init();
+  </script>
+</head>
+
+<body>
+
+  <script>
+    $('#show-sidebar').click(function() {
+      $('.ui.sidebar')
+        .sidebar('setting', 'transition', 'overlay')
+        .sidebar('toggle')
+        .sidebar('attach events', '.ui.sidebar', 'show');
+    });
+
+  </script>
+
+<!-- BEGIN MOBILE HEADER -->
+<div class="ui left inverted vertical menu sidebar">
+  <a class="menu-item first-item" href="index.html">
+    Home
+  </a>
+  <a class="menu-item" href="about.html">
+    About
+  </a>
+  <a class="menu-item" href="visit.html">
+    Visit Us
+  </a>
+  <div class="ui vertical fluid accordion menu-item">
+    <div class="title">
+      Products
+      <i class="dropdown icon" style="float:right"></i>
+    </div>
+    <div class="content">
+      <a class="item secondary" href="estatevintage.html">Estate & Vintage</a>
+      <a class="item secondary" href="artists.html">Artists</a>
+      <a class="item secondary" href="rings.html">Rings</a>
+      <a class="item secondary" href="earrings.html">Earrings</a>
+      <a class="item secondary" href="favorites.html">Linda's Favorites</a>
+      <a class="item secondary" href="bracelets.html">Bracelets</a>
+      <a class="item secondary" href="scarves.html">Scarves</a>
+      <a class="item secondary" href="necklaces.html">Necklaces & Pendants</a>
+      <a class="item secondary" href="deals.html">Deals</a>
+    </div>
+  </div>
+
+  <a class="menu-item" href="faq.html">
+    FAQ
+  </a>
+</div>
+
+<header>
+  <div id="show-sidebar" class="button toggler">
+    MENU
+  </div>
+  <div id="logo">
+    <a href="index.html"><img id="logoimg" src="images/logo.png"/></a>
+  </div>
+
+  <!-- BEGIN DESKTOP HEADER -->
+  <div id="navbar">
+    <a class="item" href="index.html">HOME</a>
+    <a class="item" href="#">ABOUT</a>
+    <a class="item" href="visit.html">VISIT</a>
+    <a class="active nav-products item">
+      PRODUCTS
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup bottom right transition hidden">
+      <div class="ui link list">
+        <a class="item" href="estatevintage.html">Estate & Vintage</a>
+        <a class="item" href="artists.html">Artists</a>
+        <a class="item" href="rings.html">Rings</a>
+        <a class="item" href="earrings.html">Earrings</a>
+        <a class="item" href="favorites.html">Linda's Favorites</a>
+        <a class="item" href="bracelets.html">Bracelets</a>
+        <a class="item" href="scarves.html">Scarves</a>
+        <a class="item" href="necklaces.html">Necklaces & Pendants</a>
+        <a class="item" href="deals.html">Deals</a>
+      </div>
+    </div>
+    <a class="item" href="faq.html">FAQ</a>
+  </div> 
+</header>
+<!-- END HEADER -->
+
+
+<div class="pusher">
+  <!-- Main Content -->
+  <div class="ui main container">
+    <h1 class="script">Artists</h1> 
+    <p><i class="fa fa-quote-left fa-2x quote"></i><i>From right here in La Jolla to distant countries across the world, artists create jewelry that is unique and makes a wonderful souvenir!</i></p>   
+    <div class="ui stackable grid">
+
+      <div class="five wide column">
+        <p class="dropdown-label">REFINE PRODUCTS</p>
+        <div class="ui selection dropdown">
+          <input type="hidden" name="refine">
+          <i class="dropdown icon"></i>
+          <div class="default text">Newest</div>
+          <div class="menu">
+            <div class="item" data-value="2">Newest</div>
+            <div class="item" data-value="1">Price Low-to-High</div>
+            <div class="item" data-value="0">Price High-to-Low</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="eleven wide column">
+    
+        <div id="productGrid">
+
+          <!-- Row 1 -->
+          <div class="column">
+            <div id="item1" class="ui card">
+              <div class="image">
+                <img src="images/favorites/1-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">LOCAL 1</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div id="item2" class="ui card">
+              <div class="image">
+                <img src="images/favorites/1-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">LOCAL 2</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div id="item3" class="ui card">
+              <div class="image">
+                <img src="images/favorites/1-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">LOCAL 3</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div id="item4" class="ui card">
+              <div class="image">
+                <img src="images/favorites/1-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">LOCAL 4</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="column">
+            <div id="item5" class="ui card">
+              <div class="image">
+                <img src="images/favorites/1-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">LOCAL 5</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div id="item6" class="ui card">
+              <div class="image">
+                <img src="images/favorites/1-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">LOCAL 6</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ui centered grid">
+          <div class="sixteen wide column">
+            <p class="dropdown-label">VIEW CATEGORY</p>
+            <div class="ui selection dropdown bottom-grid-links">
+              <input type="hidden" name="refine">
+              <i class="dropdown icon"></i>
+              <div class="default text">Artists</div>
+              <div class="menu">
+                <div class="item"><a class="" href="#">Estate & Vintage</a></div>
+                <!--<div class="item"><a class="" href="artists.html">Artists</a></div>-->
+                <div class="item"><a class="" href="rings.html">Rings</a></div>
+                <div class="item"><a class="" href="earrings.html">Earrings</a></div>
+                <div class="item"><a class="" href="bracelets.html">Bracelets</a></div>
+                <div class="item"><a class="" href="scarves.html">Scarves</a></div>
+                <div class="item"><a class="" href="necklaces.html">Necklaces & Pendants</a></div>
+                <div class="item"><a class="" href="favorites.html">Linda's Favorites</a></div>
+                <div class="item"><a class="" href="deals.html">Deals</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<div class="ui modal item1">
+  <i class="close icon"></i>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="item-desc">
+      <p class="item-title">Sterling Silver Art Nouveau Cuff</p>
+      <p class="item-subtitle">Circa 1960</p>
+      <p class="item-price">$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item2">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p class="ui center aligned">Sterling Silver Art Nouveau Cuff</p>
+      <p>Circa 1960</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item3">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item4">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item5">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item6">
+  <i class="close icon"></i>
+  <div class="header">
+    Cuff
+  </div>
+  <div class="content">
+    <img class="ui image" src="images/favorites/1-full.png">
+    <div class="ui center aligned">
+      <p>Sterling Silver Art Nouveau Cuff</p>
+      <p>$299.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+
+  <ng-include src="'partials/footer.html'"></ng-include>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
+  <script src='app.js'></script>
+  <script>
+    $(function() {
+      $('#show-sidebar').click(function() {
+        $('.menu.sidebar').sidebar('toggle');
+      });
+
+      $('#hide-sidebar').click(function() {
+        $('.menu.sidebar').sidebar('toggle');
+      });
+    });
+
+    $(document).ready(function(){
+      $("#item1").click(function(){
+        $('.ui.modal.item1').modal('show');
+      });
+
+      $("#item2").click(function(){
+        $('.ui.modal.item2').modal('show');
+      });
+
+      $("#item3").click(function(){
+        $('.ui.modal.item3').modal('show');
+      });
+    
+      $("#item4").click(function(){
+        $('.ui.modal.item4').modal('show');
+      });
+
+      $("#item5").click(function(){
+        $('.ui.modal.item5').modal('show');
+      });
+
+      $("#item6").click(function(){
+        $('.ui.modal.item6').modal('show');
+      });
+      $('.ui.dropdown').dropdown();
+      $('.ui.accordion').accordion();
+      $('.nav-products').popup({
+        inline   : true,
+        hoverable: true,
+        position : 'bottom right',
+        delay: {
+          show: 300,
+          hide: 800
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

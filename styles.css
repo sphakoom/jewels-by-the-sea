@@ -215,10 +215,10 @@ a.active.item {
 }
 
 .quote {
-    position:relative;
+    float:left;
     opacity:0.15;
-    margin:-1.75em -0.50em 0.50em 0;
-    line-height:1em;
+    margin:0em -0.50em 0 0;
+    line-height:0;
 }
 
 /* Refine dropdown */
@@ -623,4 +623,7 @@ a.navlink:hover {
     #navbar .ui.popup {
         border:1px solid #DCE4F2;
     }
+}
+
+.ui.modal.newsletter {
 }
