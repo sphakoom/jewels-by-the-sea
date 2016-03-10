@@ -53,41 +53,74 @@
     });
   </script>
 
+<!-- BEGIN MOBILE HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <div class="item">
-    <div id="hide-sidebar" class="button">
-      <i class="sidebar icon"></i>
-    </div>
-  </div>
-  <a class="item" href="index.html">
+  <a class="menu-item first-item" href="index.html">
     Home
   </a>
-  <a class="item" href="about.html">
+  <a class="menu-item" href="about.html">
     About
   </a>
-  <a class="item" href="visit.html">
+  <a class="menu-item" href="visit.html">
     Visit Us
   </a>
-  <a class="active item" href="index.html#products">
-    Products
-  </a>
-  <a class="item" href="faq.html">
+  <div class="ui vertical fluid accordion menu-item">
+    <div class="title">
+      Products
+      <i class="dropdown icon" style="float:right"></i>
+    </div>
+    <div class="content">
+      <a class="item secondary" href="estatevintage.html">Estate & Vintage</a>
+      <a class="item secondary" href="artists.html">Artists</a>
+      <a class="item secondary" href="rings.html">Rings</a>
+      <a class="item secondary" href="earrings.html">Earrings</a>
+      <a class="item secondary" href="favorites.html">Linda's Favorites</a>
+      <a class="item secondary" href="bracelets.html">Bracelets</a>
+      <a class="item secondary" href="scarves.html">Scarves</a>
+      <a class="item secondary" href="necklaces.html">Necklaces & Pendants</a>
+      <a class="item secondary" href="deals.html">Deals</a>
+    </div>
+  </div>
+
+  <a class="menu-item" href="faq.html">
     FAQ
   </a>
 </div>
-
 
 <header>
   <div id="show-sidebar" class="button toggler">
     MENU
   </div>
   <div id="logo">
-    <a href="index.html"><img src="images/logo.png" /></a>
+    <a href="index.html"><img id="logoimg" src="images/logo.png"/></a>
   </div>
-  <div id="toggle-view">
-    <i class="list layout icon"></i> VIEW
-  </div>
+
+  <!-- BEGIN DESKTOP HEADER -->
+  <div id="navbar">
+    <a class="item" href="index.html">HOME</a>
+    <a class="item" href="#">ABOUT</a>
+    <a class="item" href="visit.html">VISIT</a>
+    <a class="active nav-products item">
+      PRODUCTS
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup bottom right transition hidden">
+      <div class="ui link list">
+        <a class="item" href="estatevintage.html">Estate & Vintage</a>
+        <a class="item" href="artists.html">Artists</a>
+        <a class="item" href="rings.html">Rings</a>
+        <a class="item" href="earrings.html">Earrings</a>
+        <a class="item" href="favorites.html">Linda's Favorites</a>
+        <a class="item" href="bracelets.html">Bracelets</a>
+        <a class="item" href="scarves.html">Scarves</a>
+        <a class="item" href="necklaces.html">Necklaces & Pendants</a>
+        <a class="item" href="deals.html">Deals</a>
+      </div>
+    </div>
+    <a class="item" href="faq.html">FAQ</a>
+  </div> 
 </header>
+<!-- END HEADER -->
 
 
 <div class="pusher">
@@ -98,29 +131,18 @@
     <div class="ui stackable grid">
 
       <div class="five wide column">
-        <div class="ui list">
-          <a class="item" href="estatevintage.html">Estate & Vintage</a>
-          <a class="item" href="local.html">Local Artists</a>
-          <a class="item" href="worldwide.html">Worldwide Artists</a>
-          <a class="item light-blue" href="earrings.html">&nbsp;&nbsp;<b>Earrings</b></a>
-          <a class="item" href="bracelets.html">Bracelets</a>
-          <a class="item" href="scarves.html">Scarves</a>
-          <a class="item" href="necklaces.html">Necklaces & Pendants</a>
-          <a class="item" href="favorites.html">Linda's Favorites</a>
-          <a class="item" href="deals.html">Deals</a>
-        </div>
-
-        <div class="ui simple fluid dropdown">
-          <div class="text">REFINE</div>
+        <p class="dropdown-label">REFINE PRODUCTS</p>
+        <div class="ui selection dropdown">
+          <input type="hidden" name="refine">
           <i class="dropdown icon"></i>
+          <div class="default text">Newest</div>
           <div class="menu">
-            <div class="active item">Newest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-            <div class="item">Name</div>
-            <div class="item">Price</div>
+            <div class="item" data-value="2">Newest</div>
+            <div class="item" data-value="1">Price Low-to-High</div>
+            <div class="item" data-value="0">Price High-to-Low</div>
           </div>
         </div>
       </div>
-
 
       <div class="eleven wide column">
     
@@ -195,10 +217,31 @@
           </div>
 
         </div>
-      </div>
-      
-    </div>
 
+        <div class="ui centered grid">
+          <div class="sixteen wide column">
+            <p class="dropdown-label">VIEW CATEGORY</p>
+            <div class="ui selection dropdown bottom-grid-links">
+              <input type="hidden" name="refine">
+              <i class="dropdown icon"></i>
+              <div class="default text">Estate & Vintage</div>
+              <div class="menu">
+                <!--<div class="item"><a class="" href="#">Estate & Vintage</a></div>-->
+                <div class="item"><a class="" href="artists.html">Artists</a></div>
+                <div class="item"><a class="" href="rings.html">Rings</a></div>
+                <div class="item"><a class="" href="earrings.html">Earrings</a></div>
+                <div class="item"><a class="" href="bracelets.html">Bracelets</a></div>
+                <div class="item"><a class="" href="scarves.html">Scarves</a></div>
+                <div class="item"><a class="" href="necklaces.html">Necklaces & Pendants</a></div>
+                <div class="item"><a class="" href="favorites.html">Linda's Favorites</a></div>
+                <div class="item"><a class="" href="deals.html">Deals</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 
 <div class="ui modal item1">
@@ -329,6 +372,18 @@
 
       $("#item6").click(function(){
         $('.ui.modal.item6').modal('show');
+      });
+
+      $('.ui.dropdown').dropdown();
+      $('.ui.accordion').accordion();
+      $('.nav-products').popup({
+        inline   : true,
+        hoverable: true,
+        position : 'bottom right',
+        delay: {
+          show: 300,
+          hide: 800
+        }
       });
     });
   </script>
