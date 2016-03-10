@@ -20,10 +20,6 @@ $(document).ready(function(){
 		$('#productGrid').addClass('ui three column grid center aligned');
 	}
 
-  $('.ui.dropdown').dropdown();
-
-  $('.ui.accordion').accordion();
-
   $("#item1").click(function(){
     console.log('here');
     $('.ui.modal.item1').modal('show');
@@ -88,5 +84,7 @@ jQuery(document).ready(function($){
 		 	}, scroll_top_duration
 		);
 	});
+
+
 
 });

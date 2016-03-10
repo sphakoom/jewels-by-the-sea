@@ -3,6 +3,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -53,8 +55,9 @@
     });
   </script>
 
+<!-- BEGIN HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <a class="active menu-item first-item" href="index.html">
+  <a class="active menu-item first-item">
     Menu
   </a>
   <a class="menu-item" href="about.html">
@@ -95,118 +98,97 @@
     <a href="index.html"><img src="images/logo.png" /></a>
   </div>
 </header>
-
+<!-- END HEADER -->
 
 <div class="pusher">
   <!-- Main Content -->
   <div class="ui main container">
-    <h1 class="script">Jewels By The Sea</h1>  
     <a name="products"></a>  
     <div class="ui stackable grid">
-      <div class="eleven wide column">
+      <div class="eleven wide column home-grid">
 
-        <div id="productGrid">
+        <div id="productGrid" class="">
           <!-- Row 1 -->
           <div class="column product-item">
-
             <div class="ui card">
-              <a class="image" href="estatevintage.html">
+              <div class="grid-hover">Estate & Vintage</div>
+              <a class="image grid-hover-img" href="estatevintage.html">
                 <img src="images/estatevintage/1-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header item-header" href="estatevintage.html">Estate & Vintage</a>
-              </div>
             </div>
-
           </div>
 
           <div class="column product-item">
             <div class="ui card">
-              <a class="image" href="local.html">
+              <div class="grid-hover">Artists</div>
+              <a class="image grid-hover-img" href="local.html">
                 <img src="images/artists/1-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="local.html">Artists</a>
-              </div>
             </div>
           </div>
 
           <div class="column product-item">
             <div class="ui card">
-              <a class="image" href="worldwide.html">
+              <div class="grid-hover">Rings</div>
+              <a class="image grid-hover-img" href="local.html">
                 <img src="images/favorites/3-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="worldwide.html">Rings</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column product-item">
-            <div class="ui card">
-              <a class="image" href="earrings.html">
-                <img src="images/earrings/1-thumb.png">
-              </a>
-              <div class="content item-main">
-                <a class="header" href="earrings.html">Earrings</a>
-              </div>
             </div>
           </div>
 
           <!-- Row 2 -->
           <div class="column product-item">
             <div class="ui card">
-              <a class="image" href="favorites.html">
-                <img src="images/favorites/1-thumb.png">
+              <div class="grid-hover">Earrings</div>
+              <a class="image grid-hover-img" href="earrings.html">
+                <img src="images/earrings/1-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="favorites.html">Linda's Favorites</a>
-              </div>
             </div>
           </div>
 
           <div class="column product-item">
             <div class="ui card">
-              <a class="image" href="bracelets.html">
+              <div class="grid-hover">Linda's Favorites</div>
+              <a class="image grid-hover-img" href="favorites.html">
+                <img src="images/favorites/1-thumb.png">
+              </a>
+            </div>
+          </div>
+
+          <div class="column product-item">
+            <div class="ui card">
+              <div class="grid-hover">Bracelets</div>
+              <a class="image grid-hover-img" href="bracelets.html">
                 <img src="images/bracelets/5-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="bracelets.html">Bracelets</a>
-              </div>
             </div>
           </div>
 
           <!-- Row 3 -->
           <div class="column product-item">
             <div class="ui card">
-              <a class="image" href="scarves.html">
+              <div class="grid-hover">Scarves</div>
+              <a class="image grid-hover-img" href="scarves.html">
                 <img src="images/scarves/4-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="scarves.html">Scarves</a>
-              </div>
             </div>
           </div>
 
           <div class="column product-item">
             <div class="ui card">
-              <a class="image" href="necklaces.html">
+              <div class="grid-hover">Necklaces</div>
+              <a class="image grid-hover-img" href="necklaces.html">
                 <img src="images/favorites/4-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="necklaces.html">Necklaces</a>
-              </div>
             </div>
           </div>
 
           <div class="column product-item">
             <div class="ui card">
-              <a class="ui image" href-"deals.html">
+              <div class="grid-hover">Deals</div>
+              <a class="image grid-hover-img" href="deals.html">
                 <img src="images/deals/1-thumb.png">
               </a>
-              <div class="content item-main">
-                <a class="header" href="deals.html">Deals</a>
-              </div>
             </div>
           </div>
 
@@ -222,7 +204,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="ui image">
+            <div class="ui middle aligned image">
               <img src="images/BestOfLaJolla15.jpg" />
             </div>
           </div>
@@ -259,6 +241,9 @@
       $('#hide-sidebar').click(function() {
         $('.menu.sidebar').sidebar('toggle');
       });
+
+      $('.ui.dropdown').dropdown();
+      $('.ui.accordion').accordion();
     });
   </script>
 

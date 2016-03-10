@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log('displayProducts');
   displayProducts();
 });
 
@@ -21,7 +22,7 @@ function displayProducts() {
         + "' class='ui card'><div class='image'><img src='"+ thumb + "'>"
         + "</div><div class='content'><a class='header'>" + name 
         + "</a></div></div></div>");
-      
+      /*
       $("#productModals").append(
         "<div class='ui modal item" + i
         + "'> <i class='close icon'></i>"
@@ -33,7 +34,7 @@ function displayProducts() {
         + "<p class='item-price'>" + price + "</p>"
         + "<button class='ui blue button'>Inquire</button></div></div></div>"
         );
-
+*/
       i++;
     });
   })

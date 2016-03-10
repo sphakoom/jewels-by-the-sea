@@ -56,25 +56,36 @@
     </div>
   </header>
 -->
+<!-- BEGIN HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <div class="item">
-    <div id="hide-sidebar" class="button">
-      <i class="sidebar icon"></i>
-    </div>
-  </div>
-  <a class="item" href="index.html">
-    Home
+  <a class="active menu-item first-item" href="index.html">
+    Menu
   </a>
-  <a class="active item" href="about.html">
+  <a class="menu-item" href="about.html">
     About
   </a>
-  <a class="item" href="visit.html">
+  <a class="menu-item" href="visit.html">
     Visit Us
   </a>
-  <a class="item" href="index.html#products">
-    Products
-  </a>
-  <a class="item" href="faq.html">
+  <div class="ui vertical fluid accordion menu-item">
+    <div class="title">
+      Products
+      <i class="dropdown icon" style="float:right"></i>
+    </div>
+    <div class="content">
+      <a class="item secondary" href="estatevintage.html">Estate & Vintage</a>
+      <a class="item secondary" href="artists.html">Artists</a>
+      <a class="item secondary" href="rings.html">Rings</a>
+      <a class="item secondary" href="earrings.html">Earrings</a>
+      <a class="item secondary" href="favorites.html">Linda's Favorites</a>
+      <a class="item secondary" href="bracelets.html">Bracelets</a>
+      <a class="item secondary" href="scarves.html">Scarves</a>
+      <a class="item secondary" href="necklaces.html">Necklaces & Pendants</a>
+      <a class="item secondary" href="deals.html">Deals</a>
+    </div>
+  </div>
+
+  <a class="menu-item" href="faq.html">
     FAQ
   </a>
 </div>
@@ -88,6 +99,7 @@
     <a href="index.html"><img src="images/logo.png" /></a>
   </div>
 </header>
+<!-- END HEADER -->
 
 
 <div class="pusher">
@@ -98,7 +110,7 @@
     <h3 class="script">About Me</h3>
 
     <div class="ui basic segment">
-      <img class="ui image center aligned" src="images/about.jpg" />
+      <img class="ui centered image" src="images/about.jpg" />
     </div>
 
     <div class="ui basic left aligned segment">
@@ -126,6 +138,8 @@
         $('.menu.sidebar').sidebar('toggle');
       });
     });
+    $('.ui.dropdown').dropdown();
+    $('.ui.accordion').accordion();
   </script>
 
 

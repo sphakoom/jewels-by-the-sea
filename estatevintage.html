@@ -84,13 +84,7 @@
   
 
       <div class="eleven wide column">
-    
-        <div class="ui breadcrumb">
-          <a class="section">Products</a>
-          <div class="divider"> / </div>
-          <div class="active section">Estate & Vintage</div>
-        </div>
-
+  
         <div id="productGrid"></div>
 
         <div class="ui centered grid">
@@ -137,8 +131,8 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="classie.js"></script>
 <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
-<script src='app.js'></script>
 <script src='js/product_display.js'></script>
+<script src='app.js'></script>
 <script>
       function init() {
         var distanceY = window.pageYOffset,
@@ -170,11 +164,19 @@
           event.preventDefault();
           $('body,html').animate({
             scrollTop: 0 ,
-            }, 700
-          );
+            }, 700);
         });
       }
       window.onload = init();
+      console.log('init');
+      
+      $("#item1").click(function(){
+        console.log('here 2');
+        $('.ui.modal.item1').modal('show');
+      });
+
+      $('.ui.dropdown').dropdown();
+      $('.ui.accordion').accordion();
   </script>
 
 </body>

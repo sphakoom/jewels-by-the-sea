@@ -43,25 +43,36 @@
     });
   </script>
 
+<!-- BEGIN HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <div class="item">
-    <div id="hide-sidebar" class="button">
-      <i class="sidebar icon"></i>
-    </div>
-  </div>
-  <a class="item" href="index.html">
-    Home
+  <a class="active menu-item first-item">
+    Menu
   </a>
-  <a class="item" href="about.html">
+  <a class="menu-item" href="about.html">
     About
   </a>
-  <a class="item" href="visit.html">
+  <a class="menu-item" href="visit.html">
     Visit Us
   </a>
-  <a class="item" href="index.html#products">
-    Products
-  </a>
-  <a class="active item" href="faq.html">
+  <div class="ui vertical fluid accordion menu-item">
+    <div class="title">
+      Products
+      <i class="dropdown icon" style="float:right"></i>
+    </div>
+    <div class="content">
+      <a class="item secondary" href="estatevintage.html">Estate & Vintage</a>
+      <a class="item secondary" href="artists.html">Artists</a>
+      <a class="item secondary" href="rings.html">Rings</a>
+      <a class="item secondary" href="earrings.html">Earrings</a>
+      <a class="item secondary" href="favorites.html">Linda's Favorites</a>
+      <a class="item secondary" href="bracelets.html">Bracelets</a>
+      <a class="item secondary" href="scarves.html">Scarves</a>
+      <a class="item secondary" href="necklaces.html">Necklaces & Pendants</a>
+      <a class="item secondary" href="deals.html">Deals</a>
+    </div>
+  </div>
+
+  <a class="menu-item" href="faq.html">
     FAQ
   </a>
 </div>
@@ -75,6 +86,7 @@
     <a href="index.html"><img src="images/logo.png" /></a>
   </div>
 </header>
+<!-- END HEADER -->
 
 
 <div class="pusher">
@@ -84,7 +96,7 @@
     <h3 class="script">Frequently Asked Questions</h3>
   
     <div class="faq-container">
-    <div class="ui list faq-list">
+    <div class="ui list faq-list div-center">
       <a class="item" href="#1" target="_self">What is the difference between estate, vintage, and antique jewelry?</a>
       <a class="item" href="#2" target="_self">Does Jewels By The Sea create custom jewelry?</a>
       <a class="item" href="#3" target="_self">Does Jewels By The Sea do jewelry repair?</a>
@@ -233,6 +245,9 @@
         $('.menu.sidebar').sidebar('toggle');
       });
     });
+    
+    $('.ui.dropdown').dropdown();
+    $('.ui.accordion').accordion();
   </script>
 
 </body>
