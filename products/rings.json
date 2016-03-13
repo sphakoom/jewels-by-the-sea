@@ -1,0 +1,50 @@
+{
+       "name":"Tricolor Amethyst Ring",
+       "price": "$59.00",
+       "img": "images/rings/1-full.png",
+       "thumb": "images/rings/1-thumb.png",
+       "description": "Adjustable tricolor amethyst ring."
+   },
+   {
+       "name": "Sterling & Gold Plate Ring",
+       "price": "$99.00",
+       "img": "images/rings/2-full.png",
+       "thumb": "images/rings/2-thumb.png",
+       "description": "Designer sterling silver & gold plate ring."
+   },
+   {
+       "name": "Sterling Silver & Peridot Ring",
+       "price": "$59.00",
+       "img": "images/rings/3-full.png",
+       "thumb": "images/rings/3-thumb.png",
+       "description": "Ring made of sterling silver and peridot."
+   },
+   {
+       "name": "Sterling Silver & Fire Opal Ring",
+       "price": "$69.00",
+       "img": "images/rings/5-full.png",
+       "thumb": "images/rings/5-thumb.png",
+       "description": "Ring made of sterling silver and fire opal."
+   },
+   {
+       "name": "White Gold, Jade, & Diamond Ring",
+       "price": "$799.00",
+       "img": "images/rings/6-full.png",
+       "thumb": "images/rings/6-thumb.png",
+       "description": "14KT. white gold, jade, and diamond ring."
+   },
+   {
+       "name": "Rutilated Quartz Ring",
+       "price": "$399.00",
+       "img": "images/rings/7-full.png",
+       "thumb": "images/rings/7-thumb.png",
+       "description": "Handmade rutilated quartz ring, size 8."
+   },
+   {
+       "name": "Gold & Inlay Shell Ring",
+       "price": "$329.00",
+       "img": "images/rings/8-full.png",
+       "thumb": "images/rings/8-thumb.png",
+       "description": "Gold with shell inlay ring."
+   }
+]

@@ -297,6 +297,15 @@ a.active.item {
     margin-right:auto;
 }
 
+.artist-key {
+    text-align: center;
+    color:#7aa2cf;
+}
+
+.artist-key i{
+    color:#00093B;
+}
+
 /* Back to Top */
 .cd-top {
   display: inline-block;
@@ -514,7 +523,7 @@ a.navlink:hover {
     }
 
     .google-map {
-        padding-bottom:70%;
+        padding-bottom:35%;
     }
 
     /* Resize Google Maps on small viewports*/

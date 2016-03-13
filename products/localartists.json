@@ -1,0 +1,85 @@
+{
+       "name":"Moonstone Bracelets by Nicole",
+       "price": "$39.00",
+       "img": "images/localartists/1-full.png",
+       "thumb": "images/localartists/1-thumb.png",
+       "description": "Moonstone in gold tone by Nicole."
+   },
+   {
+       "name": "Cultured Pearl Earrings by Valerie",
+       "price": "$29.00",
+       "img": "images/localartists/2-full.png",
+       "thumb": "images/localartists/2-thumb.png",
+       "description": "Cultured pearl clusters by Valerie."
+   },
+   {
+       "name": "Sterling Silver Amethyst Drops",
+       "price": "$79.00",
+       "img": "images/localartists/3-full.png",
+       "thumb": "images/localartists/3-thumb.png",
+       "description": "Necklace made of sterling silver and amethyst drops."
+   },
+   {
+       "name": "Large Kiwi Jasper and Pearls by Linda",
+       "price": "$139.00",
+       "img": "images/localartists/4-full.png",
+       "thumb": "images/localartists/4-thumb.png",
+       "description": "Kiwi Jasper and pearl necklace by Linda."
+   },
+   {
+       "name": "Bracelet by Marcia",
+       "price": "$39.00",
+       "img": "images/localartists/5-full.png",
+       "thumb": "images/localartists/5-thumb.png",
+       "description": "Bracelet made of "Something Old, Something New" by Marcia."
+   },
+   {
+       "name": "Hoops w/ Shells by Wati",
+       "price": "$39.00",
+       "img": "images/localartists/6-full.png",
+       "thumb": "images/localartists/6-thumb.png",
+       "description": "Sterling hoops with shells by Wati."
+   },
+   {
+       "name": "African Glass Bead Bracelet by Linda",
+       "price": "$39.00",
+       "img": "images/localartists/7-full.png",
+       "thumb": "images/localartists/7-thumb.png",
+       "description": "Handmade African glass beads by Linda."
+   },
+   {
+       "name": "Shell, Pearl, Crystal and Rose Quartz by Valerie",
+       "price": "$49.00",
+       "img": "images/localartists/8-full.png",
+       "thumb": "images/localartists/8-thumb.png",
+       "description": "Pendant made of shell, pearl, crystal, and rose quartz by Valerie."
+   },
+   {
+       "name": "Yoga Pose & Bead Earrings by Anonymous",
+       "price": "$39.00",
+       "img": "images/localartists/9-full.png",
+       "thumb": "images/localartists/9-thumb.png",
+       "description": "Sterling silver yoga pose & beads."
+   },
+   {
+       "name": "Red Coral Necklace by Carol",
+       "price": "$69.00",
+       "img": "images/localartists/10-full.png",
+       "thumb": "images/localartists/10-thumb.png",
+       "description": "Red coral necklace of adjustable length by Carol."
+   },
+   {
+       "name": "Amethyst Chunk Necklace by Amy",
+       "price": "$59.00",
+       "img": "images/localartists/11-full.png",
+       "thumb": "images/localartists/11-thumb.png",
+       "description": "Necklace made of amethyst by Amy."
+   },
+   {
+       "name": "Sterling Silver Pearl & Crystal Necklace",
+       "price": "$59.00",
+       "img": "images/localartists/12-full.png",
+       "thumb": "images/localartists/12-thumb.png",
+       "description": "Delicate antiqued sterling silver pearl & crystal."
+   }
+]

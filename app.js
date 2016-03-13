@@ -57,6 +57,43 @@ $(document).ready(function(){
   $("#item9").click(function(){
     $('.ui.modal.item9').modal('show');
   });
+
+  $("#item10").click(function(){
+    $('.ui.modal.item10').modal('show');
+  });
+
+  $("#item11").click(function(){
+    $('.ui.modal.item11').modal('show');
+  });
+
+  $("#item12").click(function(){
+    $('.ui.modal.item12').modal('show');
+  });
+
+  $("#item13").click(function(){
+    $('.ui.modal.item13').modal('show');
+  });
+
+  $("#item14").click(function(){
+    $('.ui.modal.item14').modal('show');
+  });
+
+  $("#item15").click(function(){
+    $('.ui.modal.item15').modal('show');
+  });
+
+  $("#item16").click(function(){
+    $('.ui.modal.item16').modal('show');
+  });
+
+  $("#item17").click(function(){
+    $('.ui.modal.item17').modal('show');
+  });
+  
+  $("#item18").click(function(){
+    $('.ui.modal.item18').modal('show');
+  });
+
 });
 
 $(window).on('resize', '#productGrid', function(){
