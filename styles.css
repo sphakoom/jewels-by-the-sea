@@ -523,7 +523,8 @@ a.navlink:hover {
     }
 
     .google-map {
-        padding-bottom:35%;
+        padding-bottom:75%;
+        margin-bottom:-15%;
     }
 
     /* Resize Google Maps on small viewports*/
@@ -549,6 +550,10 @@ a.navlink:hover {
 
     #faqimg {
         display:none;
+    }
+
+    .visit-img {
+        display:none !important;
     }
 
     header {
