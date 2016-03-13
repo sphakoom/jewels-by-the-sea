@@ -25,7 +25,7 @@
        "price": "$99.00",
        "img": "images/bracelets/4-full.png",
        "thumb": "images/bracelets/4-thumb.png",
-       "description": "Sterling silver and fire opal 7’’ link bracelet."
+       "description": "Sterling silver and fire opal 7\" link bracelet."
    },
    {
        "name": "Prehnite Stretch Bracelet",
@@ -39,17 +39,17 @@
        "price": "$129.00",
        "img": "images/bracelets/6-full.png",
        "thumb": "images/bracelets/6-thumb.png",
-       "description": “Sterling silver and turquoise link."
+       "description": "Sterling silver and turquoise link."
    },
    {
-       "name": “Lavender Jade Bracelet",
+       "name": "Lavender Jade Bracelet",
        "price": "$139.00",
        "img": "images/bracelets/7-full.png",
        "thumb": "images/bracelets/7-thumb.png",
-       "description": “Bracelet made from sterling silver and lavender jade."
+       "description": "Bracelet made from sterling silver and lavender jade."
    },
    {
-       "name": “Chalcedony Quartz & Agate Bracelet",
+       "name": "Chalcedony Quartz & Agate Bracelet",
        "price": "$49.00",
        "img": "images/bracelets/8-full.png",
        "thumb": "images/bracelets/8-thumb.png",

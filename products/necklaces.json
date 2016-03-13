@@ -1,0 +1,64 @@
+﻿{
+       "name":"Fire Opal Starfish Necklace",
+       "price": "$79.00",
+       "img": "images/necklaces/1-full.png",
+       "thumb": "images/necklaces/1-thumb.png",
+       "description": "Sterling silver fire opal starfish."
+   },
+   {
+       "name": "Silver & Amethyst Pendant",
+       "price": "$99.00",
+       "img": "images/necklaces/2-full.png",
+       "thumb": "images/necklaces/2-thumb.png",
+       "description": "Handmade tricolor metal with onyx cabochon cuff."
+   },
+   {
+       "name": "Silver Plated Larimar",
+       "price": "$129.00",
+       "img": "images/necklaces/3-full.png",
+       "thumb": "images/necklaces/3-thumb.png",
+       "description": "Silver-plated larimar necklace."
+   },
+   {
+       "name": "Gold Tone Cubic Zirconia",
+       "price": "$69.00",
+       "img": "images/necklaces/4-full.png",
+       "thumb": "images/necklaces/4-thumb.png",
+       "description": "16\" gold-tone cubic zirconia on stations."
+   },
+   {
+       "name": "30-34\" Tricolor",
+       "price": "$49.00",
+       "img": "images/necklaces/5-full.png",
+       "thumb": "images/necklaces/5-thumb.png",
+       "description": "Large, fun and funky fashion necklace."
+   },
+   {
+       "name": "Shell Necklace",
+       "price": "$29.00",
+       "img": "images/necklaces/6-full.png",
+       "thumb": "images/necklaces/6-thumb.png",
+       "description": "Shell and wood 18\" long necklace."
+   },
+   {
+       "name": "Icelandic Pendant",
+       "price": "$299.00",
+       "img": "images/necklaces/7-full.png",
+       "thumb": "images/necklaces/7-thumb.png",
+       "description": "14 karat 16\" designer pendant from Iceland."
+   },
+   {
+       "name": "62\" Pearl Strand",
+       "price": "$129.00",
+       "img": "images/necklaces /8-full.png",
+       "thumb": "images/necklaces/8-thumb.png",
+       "description": "62\" knotted freshwater pearl strand."
+   },
+   {
+       "name": "Multicolored Sapphire Pendant",
+       "price": "$699.00",
+       "img": "images/necklaces/9-full.png",
+       "thumb": "images/necklaces/9-thumb.png",
+       "description": "14 karat white gold 16\" multi-colored sapphire pendant."
+   }
+]

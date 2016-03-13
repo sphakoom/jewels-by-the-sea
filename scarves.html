@@ -14,108 +14,129 @@
 
   <script src="classie.js"></script>
   <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 250,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 250,
+                logo = document.querySelector("#logoimg"),
+                toTop = document.querySelector("#toTop");
+
+            if (distanceY > shrinkOn) {
+                classie.add(logo,"smaller");
+                classie.add(toTop, "show");
+            } else {
+                if (classie.has(logo,"smaller")) {
+                    classie.remove(logo,"smaller");
+                }
+                if(classie.has(toTop, "show")) {
+                  classie.remove(toTop, "show");
+                }
+            }
+        });
+    }
+    window.onload = init();
   </script>
 </head>
 
 <body>
 
-  <div id="fb-root"></div>
   <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=69518898450";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
     $('#show-sidebar').click(function() {
       $('.ui.sidebar')
         .sidebar('setting', 'transition', 'overlay')
         .sidebar('toggle')
         .sidebar('attach events', '.ui.sidebar', 'show');
     });
+
   </script>
 
+<!-- BEGIN MOBILE HEADER -->
 <div class="ui left inverted vertical menu sidebar">
-  <div class="item">
-    <div id="hide-sidebar" class="button">
-      <i class="sidebar icon"></i>
-    </div>
-  </div>
-  <a class="item" href="index.html">
+  <a class="menu-item first-item" href="index.html">
     Home
   </a>
-  <a class="item" href="about.html">
+  <a class="menu-item" href="about.html">
     About
   </a>
-  <a class="item" href="visit.html">
+  <a class="menu-item" href="visit.html">
     Visit Us
   </a>
-  <a class="active item" href="index.html#products">
-    Products
-  </a>
-  <a class="item" href="faq.html">
+  <div class="ui vertical fluid accordion menu-item">
+    <div class="title">
+      Products
+      <i class="dropdown icon" style="float:right"></i>
+    </div>
+    <div class="content">
+      <a class="item secondary" href="estatevintage.html">Estate & Vintage</a>
+      <a class="item secondary" href="artists.html">Artists</a>
+      <a class="item secondary" href="rings.html">Rings</a>
+      <a class="item secondary" href="earrings.html">Earrings</a>
+      <a class="item secondary" href="favorites.html">Linda's Favorites</a>
+      <a class="item secondary" href="bracelets.html">Bracelets</a>
+      <a class="item secondary" href="scarves.html">Scarves</a>
+      <a class="item secondary" href="necklaces.html">Necklaces & Pendants</a>
+      <a class="item secondary" href="deals.html">Deals</a>
+    </div>
+  </div>
+
+  <a class="menu-item" href="faq.html">
     FAQ
   </a>
 </div>
-
 
 <header>
   <div id="show-sidebar" class="button toggler">
     MENU
   </div>
   <div id="logo">
-    <a href="index.html"><img src="images/logo.png" /></a>
+    <a href="index.html"><img id="logoimg" src="images/logo.png"/></a>
   </div>
-  <div id="toggle-view">
-    <i class="list layout icon"></i> VIEW
-  </div>
+
+  <!-- BEGIN DESKTOP HEADER -->
+  <div id="navbar">
+    <a class="item" href="index.html">HOME</a>
+    <a class="item" href="about.html">ABOUT</a>
+    <a class="item" href="visit.html">VISIT</a>
+    <a class="active nav-products item">
+      PRODUCTS
+      <i class="dropdown icon"></i>
+    </a>
+    <div class="ui popup bottom right transition hidden">
+      <div class="ui link list">
+        <a class="item" href="estatevintage.html">Estate & Vintage</a>
+        <a class="item" href="artists.html">Artists</a>
+        <a class="item" href="rings.html">Rings</a>
+        <a class="item" href="earrings.html">Earrings</a>
+        <a class="item" href="favorites.html">Linda's Favorites</a>
+        <a class="item" href="bracelets.html">Bracelets</a>
+        <a class="item" href="scarves.html">Scarves</a>
+        <a class="item" href="necklaces.html">Necklaces & Pendants</a>
+        <a class="item" href="deals.html">Deals</a>
+      </div>
+    </div>
+    <a class="item" href="faq.html">FAQ</a>
+  </div> 
 </header>
+<!-- END HEADER -->
 
 
 <div class="pusher">
   <!-- Main Content -->
   <div class="ui main container">
-    <h1 class="script">Bracelets</h1> 
+    <h1 class="script">Scarves</h1> 
     <p><i class="fa fa-quote-left fa-2x quote"></i><i>Scarves are delightful for individual expression.</i></p>   
     <div class="ui stackable grid">
 
       <div class="five wide column">
-        <div class="ui list">
-          <a class="item" href="estatevintage.html">Estate & Vintage</a>
-          <a class="item" href="local.html">Local Artists</a>
-          <a class="item" href="worldwide.html">Worldwide Artists</a>
-          <a class="item" href="bracelets.html">Bracelets</a>
-          <a class="item light-blue" href="scarves.html">&nbsp;&nbsp;<b>Scarves</b></a>
-          <a class="item" href="necklaces.html">Necklaces & Pendants</a>
-          <a class="item" href="favorites.html">Linda's Favorites</a>
-          <a class="item" href="deals.html">Deals</a>
-        </div>
-
-        <div class="ui simple fluid dropdown">
-          <div class="text">REFINE</div>
+        <p class="dropdown-label">REFINE PRODUCTS</p>
+        <div class="ui selection dropdown">
+          <input type="hidden" name="refine">
           <i class="dropdown icon"></i>
+          <div class="default text">Newest</div>
           <div class="menu">
-            <div class="active item">Newest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-            <div class="item">Name</div>
-            <div class="item">Price</div>
+            <div class="item" data-value="2">Newest</div>
+            <div class="item" data-value="1">Price Low-to-High</div>
+            <div class="item" data-value="0">Price High-to-Low</div>
           </div>
         </div>
       </div>
@@ -123,16 +144,16 @@
 
       <div class="eleven wide column">
     
-        <div class="ui two column grid center aligned">
+        <div class="three column doubling ui grid center aligned">
 
-          <!-- Row 1 -->
+            <!-- Row 1 -->
           <div class="column">
             <div id="item1" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/scarves/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">SCARF 1</a>
+                <a class="header">Blue Leaf With Fringe</a>
               </div>
             </div>
           </div>
@@ -140,10 +161,10 @@
           <div class="column">
             <div id="item2" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/scarves/2-thumb.png">
               </div>
               <div class="content">
-                <a class="header">SCARF 2</a>
+                <a class="header">Silk Scarf</a>
               </div>
             </div>
           </div>
@@ -151,10 +172,10 @@
           <div class="column">
             <div id="item3" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/scarves/3-thumb.png">
               </div>
               <div class="content">
-                <a class="header">SCARF 3</a>
+                <a class="header">Gray Leaf With Fringe</a>
               </div>
             </div>
           </div>
@@ -162,52 +183,55 @@
           <div class="column">
             <div id="item4" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/scarves/7-thumb.png">
               </div>
               <div class="content">
-                <a class="header">SCARF 4</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="column">
-            <div id="item5" class="ui card">
-              <div class="image">
-                <img src="images/favorites/1-thumb.png">
-              </div>
-              <div class="content">
-                <a class="header">SCARF 5</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div id="item6" class="ui card">
-              <div class="image">
-                <img src="images/favorites/1-thumb.png">
-              </div>
-              <div class="content">
-                <a class="header">SCARF 6</a>
+                <a class="header">Blue Ruffled Scarf</a>
               </div>
             </div>
           </div>
 
         </div>
-      </div>
-      
-    </div>
 
+        <div class="ui centered grid">
+          <div class="sixteen wide column">
+            <p class="dropdown-label">VIEW CATEGORY</p>
+            <div class="ui selection dropdown bottom-grid-links">
+              <input type="hidden" name="refine">
+              <i class="dropdown icon"></i>
+              <div class="default text">Scarves</div>
+              <div class="menu">
+                <a class="item" href="estatevintage.html">Estate & Vintage</a>
+                <a class="item" href="artists.html">Artists</a>
+                <a class="item" href="rings.html">Rings</a>
+                <a class="item" href="earrings.html">Earrings</a>
+                <a class="item" href="bracelets.html">Bracelets</a>
+                <!--<a class="item" href="scarves.html">Scarves</a>-->
+                <a class="item" href="necklaces.html">Necklaces & Pendants</a>
+                <a class="item" href="favorites.html">Linda's Favorites</a>
+                <a class="item" href="deals.html">Deals</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
+
+<a href="#0" id="toTop">
+  &nbsp;<i class="chevron up icon"></i> <br />
+  <span class="topText">Back To Top</span>
+</a>
 
 <div class="ui modal item1">
   <i class="close icon"></i>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
+    <img class="ui centered medium image" src="images/scarves/1-full.png">
     <div class="item-desc">
-      <p class="item-title">Sterling Silver Art Nouveau Cuff</p>
-      <p class="item-subtitle">Circa 1960</p>
-      <p class="item-price">$299.00</p>
+      <p class="item-title">Blue Leaf With Fringe</p>
+      <p class="item-subtitle">Fringed scarf with a blue leaf design. Available in several colors.</p>
+      <p class="item-price">$29.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -215,15 +239,12 @@
 
 <div class="ui modal item2">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p class="ui center aligned">Sterling Silver Art Nouveau Cuff</p>
-      <p>Circa 1960</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/scarves/2-full.png">
+    <div class="item-desc">
+      <p class="item-title">Silk Scarf</p>
+      <p class="item-subtitle">Red scarf made of 100% Chinese silk.</p>
+      <p class="item-price">$79.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -231,14 +252,12 @@
 
 <div class="ui modal item3">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/scarves/3-full.png">
+    <div class="item-desc">
+      <p class="item-title">Gray Leaf With Fringe</p>
+      <p class="item-subtitle">Fringed scarf with a gray leaf design. Available in several colors.</p>
+      <p class="item-price">$29.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -246,44 +265,12 @@
 
 <div class="ui modal item4">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
-      <button class="ui blue button">Inquire</button>
-    </div>
- </div>
-</div>
-
-<div class="ui modal item5">
-  <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
-  <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
-      <button class="ui blue button">Inquire</button>
-    </div>
- </div>
-</div>
-
-<div class="ui modal item6">
-  <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
-  <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/scarves/7-full.png">
+    <div class="item-desc">
+      <p class="item-title">Blue Ruffled Scarf</p>
+      <p class="item-subtitle">Blue scarf with a ruffled design by Meredith.</p>
+      <p class="item-price">$29.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -291,45 +278,45 @@
 
 
   <ng-include src="'partials/footer.html'"></ng-include>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="classie.js"></script>
+<script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
+<script src='app.js'></script>
+<script>
+      function init() {
+        var distanceY = window.pageYOffset,
+            shrinkOn = 200,
+            header = document.querySelector("header"),
+            toTop = document.getElementById("toTop");
 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
-  <script>
-    $(function() {
-      $('#show-sidebar').click(function() {
-        $('.menu.sidebar').sidebar('toggle');
-      });
 
-      $('#hide-sidebar').click(function() {
-        $('.menu.sidebar').sidebar('toggle');
-      });
-    });
-
-    $(document).ready(function(){
+        //smooth scroll to top
+        $(toTop).on('click', function(event){
+          event.preventDefault();
+          $('body,html').animate({
+            scrollTop: 0 ,
+            }, 700);
+        });
+      }
+      window.onload = init();
+      console.log('init');
+      
       $("#item1").click(function(){
+        console.log('here 2');
         $('.ui.modal.item1').modal('show');
       });
 
-      $("#item2").click(function(){
-        $('.ui.modal.item2').modal('show');
+      $('.ui.dropdown').dropdown();
+      $('.ui.accordion').accordion();
+      $('.nav-products').popup({
+        inline   : true,
+        hoverable: true,
+        position : 'bottom right',
+        delay: {
+          show: 300,
+          hide: 800
+        }
       });
-
-      $("#item3").click(function(){
-        $('.ui.modal.item3').modal('show');
-      });
-    
-      $("#item4").click(function(){
-        $('.ui.modal.item4').modal('show');
-      });
-
-      $("#item5").click(function(){
-        $('.ui.modal.item5').modal('show');
-      });
-
-      $("#item6").click(function(){
-        $('.ui.modal.item6').modal('show');
-      });
-    });
   </script>
 
 </body>

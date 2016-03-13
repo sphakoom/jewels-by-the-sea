@@ -14,43 +14,40 @@
 
   <script src="classie.js"></script>
   <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 250,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 250,
+                logo = document.querySelector("#logoimg"),
+                toTop = document.querySelector("#toTop");
+
+            if (distanceY > shrinkOn) {
+                classie.add(logo,"smaller");
+                classie.add(toTop, "show");
+            } else {
+                if (classie.has(logo,"smaller")) {
+                    classie.remove(logo,"smaller");
+                }
+                if(classie.has(toTop, "show")) {
+                  classie.remove(toTop, "show");
+                }
+            }
+        });
+    }
+    window.onload = init();
   </script>
 </head>
 
 <body>
 
-  <div id="fb-root"></div>
   <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=69518898450";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
     $('#show-sidebar').click(function() {
       $('.ui.sidebar')
         .sidebar('setting', 'transition', 'overlay')
         .sidebar('toggle')
         .sidebar('attach events', '.ui.sidebar', 'show');
     });
+
   </script>
 
 <!-- BEGIN MOBILE HEADER -->
@@ -98,7 +95,7 @@
   <!-- BEGIN DESKTOP HEADER -->
   <div id="navbar">
     <a class="item" href="index.html">HOME</a>
-    <a class="item" href="#">ABOUT</a>
+    <a class="item" href="about.html">ABOUT</a>
     <a class="item" href="visit.html">VISIT</a>
     <a class="active nav-products item">
       PRODUCTS
@@ -146,16 +143,16 @@
 
       <div class="eleven wide column">
     
-        <div class="ui two column grid center aligned">
+        <div class="three column doubling ui grid center aligned">
 
           <!-- Row 1 -->
           <div class="column">
             <div id="item1" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/earrings/1-thumb.png">
               </div>
               <div class="content">
-                <a class="header">EARRING 1</a>
+                <a class="header">Swarovski Crystal Element Hoops</a>
               </div>
             </div>
           </div>
@@ -163,10 +160,10 @@
           <div class="column">
             <div id="item2" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/earrings/2-thumb.png">
               </div>
               <div class="content">
-                <a class="header">EARRING 2</a>
+                <a class="header">Gold-plated Amethyst & Pearl Earrings</a>
               </div>
             </div>
           </div>
@@ -174,10 +171,10 @@
           <div class="column">
             <div id="item3" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/earrings/3-thumb.png">
               </div>
               <div class="content">
-                <a class="header">EARRING 3</a>
+                <a class="header">Sterling Silver Drops</a>
               </div>
             </div>
           </div>
@@ -185,22 +182,21 @@
           <div class="column">
             <div id="item4" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/earrings/4-thumb.png">
               </div>
               <div class="content">
-                <a class="header">EARRING 4</a>
+                <a class="header">Gray Pearl Drops</a>
               </div>
             </div>
           </div>
 
-          <!-- Row 2 -->
           <div class="column">
             <div id="item5" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/earrings/5-thumb.png">
               </div>
               <div class="content">
-                <a class="header">EARRING 5</a>
+                <a class="header">Etruscan Revival Drops</a>
               </div>
             </div>
           </div>
@@ -208,15 +204,48 @@
           <div class="column">
             <div id="item6" class="ui card">
               <div class="image">
-                <img src="images/favorites/1-thumb.png">
+                <img src="images/earrings/6-thumb.png">
               </div>
               <div class="content">
-                <a class="header">EARRING 6</a>
+                <a class="header">Tahitian Pearl & Diamond Earrings</a>
               </div>
             </div>
           </div>
 
-        </div>
+          <div class="column">
+            <div id="item7" class="ui card">
+              <div class="image">
+                <img src="images/earrings/7-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">Fire Opal Starfish Earrings</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div id="item8" class="ui card">
+              <div class="image">
+                <img src="images/earrings/8-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">Silver Amethyst Drops</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div id="item9" class="ui card">
+              <div class="image">
+                <img src="images/earrings/9-thumb.png">
+              </div>
+              <div class="content">
+                <a class="header">Saturn Earrings</a>
+              </div>
+            </div>
+          </div>
+
+      </div>
 
         <div class="ui centered grid">
           <div class="sixteen wide column">
@@ -224,17 +253,17 @@
             <div class="ui selection dropdown bottom-grid-links">
               <input type="hidden" name="refine">
               <i class="dropdown icon"></i>
-              <div class="default text">Estate & Vintage</div>
+              <div class="default text">Earrings</div>
               <div class="menu">
-                <!--<div class="item"><a class="" href="#">Estate & Vintage</a></div>-->
-                <div class="item"><a class="" href="artists.html">Artists</a></div>
-                <div class="item"><a class="" href="rings.html">Rings</a></div>
-                <div class="item"><a class="" href="earrings.html">Earrings</a></div>
-                <div class="item"><a class="" href="bracelets.html">Bracelets</a></div>
-                <div class="item"><a class="" href="scarves.html">Scarves</a></div>
-                <div class="item"><a class="" href="necklaces.html">Necklaces & Pendants</a></div>
-                <div class="item"><a class="" href="favorites.html">Linda's Favorites</a></div>
-                <div class="item"><a class="" href="deals.html">Deals</a></div>
+                <a class="item" href="estatevintage.html">Estate & Vintage</a>
+                <a class="item" href="artists.html">Artists</a>
+                <a class="item" href="rings.html">Rings</a>
+                <!--<a class="item" href="earrings.html">Earrings</a>-->
+                <a class="item" href="bracelets.html">Bracelets</a>
+                <a class="item" href="scarves.html">Scarves</a>
+                <a class="item" href="necklaces.html">Necklaces & Pendants</a>
+                <a class="item" href="favorites.html">Linda's Favorites</a>
+                <a class="item" href="deals.html">Deals</a>
               </div>
             </div>
           </div>
@@ -247,11 +276,11 @@
 <div class="ui modal item1">
   <i class="close icon"></i>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
+    <img class="ui centered medium image" src="images/earrings/1-full.png">
     <div class="item-desc">
-      <p class="item-title">Sterling Silver Art Nouveau Cuff</p>
-      <p class="item-subtitle">Circa 1960</p>
-      <p class="item-price">$299.00</p>
+      <p class="item-title">Swarovski Crystal Element Hoops</p>
+      <p class="item-subtitle">Simple hoops made with Swarovski crystal elements, available on all colors.</p>
+      <p class="item-price">$39.00 each</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -259,15 +288,12 @@
 
 <div class="ui modal item2">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p class="ui center aligned">Sterling Silver Art Nouveau Cuff</p>
-      <p>Circa 1960</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/earrings/2-full.png">
+    <div class="item-desc">
+      <p class="item-title">Amethyst & Pearl Earrings</p>
+      <p class="item-subtitle">18 karat gold-plated amethyst and pearls from Brazil.</p>
+      <p class="item-price">$69.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -275,14 +301,12 @@
 
 <div class="ui modal item3">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/earrings/3-full.png">
+    <div class="item-desc">
+      <p class="item-title">Sterling Silver Drops</p>
+      <p class="item-subtitle">Sterling silver hammered and bright drop earrings.</p>
+      <p class="item-price">$39.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -290,14 +314,12 @@
 
 <div class="ui modal item4">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/earrings/4-full.png">
+    <div class="item-desc">
+      <p class="item-title">Gray Pearl Drops</p>
+      <p class="item-subtitle">Pear-shaped gray pearl & silver drops.</p>
+      <p class="item-price">$20.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -305,14 +327,12 @@
 
 <div class="ui modal item5">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/earrings/5-full.png">
+    <div class="item-desc">
+      <p class="item-title">Etruscan Revival Drops</p>
+      <p class="item-subtitle">14 karat yellow gold Etruscan revival drop earrings. Circa 1920s.</p>
+      <p class="item-price">$599.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
@@ -320,58 +340,84 @@
 
 <div class="ui modal item6">
   <i class="close icon"></i>
-  <div class="header">
-    Cuff
-  </div>
   <div class="content">
-    <img class="ui image" src="images/favorites/1-full.png">
-    <div class="ui center aligned">
-      <p>Sterling Silver Art Nouveau Cuff</p>
-      <p>$299.00</p>
+    <img class="ui centered medium image" src="images/earrings/6-full.png">
+    <div class="item-desc">
+      <p class="item-title">Tahitian Pearl & Diamond Earrings</p>
+      <p class="item-subtitle">14 karat white gold Tahitian pearl and diamonds.</p>
+      <p class="item-price">$699.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item7">
+  <i class="close icon"></i>
+  <div class="content">
+    <img class="ui centered medium image" src="images/earrings/7-full.png">
+    <div class="item-desc">
+      <p class="item-title">Fire Opal Starfish Earrings</p>
+      <p class="item-subtitle">Sterling silver fire and opal starfish earrings.</p>
+      <p class="item-price">$69.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item8">
+  <i class="close icon"></i>
+  <div class="content">
+    <img class="ui centered medium image" src="images/earrings/8-full.png">
+    <div class="item-desc">
+      <p class="item-title">Sterling Silver Amethyst Drops</p>
+      <p class="item-subtitle">Drop earrings made of sterling silver and amethyst.</p>
+      <p class="item-price">$39.00</p>
+      <button class="ui blue button">Inquire</button>
+    </div>
+ </div>
+</div>
+
+<div class="ui modal item9">
+  <i class="close icon"></i>
+  <div class="content">
+    <img class="ui centered medium image" src="images/earrings/9-full.png">
+    <div class="item-desc">
+      <p class="item-title">Saturn Earrings</p>
+      <p class="item-subtitle">Saturn-shaped earrings with silver wires.</p>
+      <p class="item-price">$19.00</p>
       <button class="ui blue button">Inquire</button>
     </div>
  </div>
 </div>
 
 
-  <ng-include src="'partials/footer.html'"></ng-include>
+<ng-include src="'partials/footer.html'"></ng-include>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="classie.js"></script>
+<script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
+<script src='app.js'></script>
+<script>
+      function init() {
+        var distanceY = window.pageYOffset,
+            shrinkOn = 200,
+            header = document.querySelector("header"),
+            toTop = document.getElementById("toTop");
 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.js'></script>
-  <script>
-    $(function() {
-      $('#show-sidebar').click(function() {
-        $('.menu.sidebar').sidebar('toggle');
-      });
 
-      $('#hide-sidebar').click(function() {
-        $('.menu.sidebar').sidebar('toggle');
-      });
-    });
-
-    $(document).ready(function(){
+        //smooth scroll to top
+        $(toTop).on('click', function(event){
+          event.preventDefault();
+          $('body,html').animate({
+            scrollTop: 0 ,
+            }, 700);
+        });
+      }
+      window.onload = init();
+      console.log('init');
+      
       $("#item1").click(function(){
+        console.log('here 2');
         $('.ui.modal.item1').modal('show');
-      });
-
-      $("#item2").click(function(){
-        $('.ui.modal.item2').modal('show');
-      });
-
-      $("#item3").click(function(){
-        $('.ui.modal.item3').modal('show');
-      });
-    
-      $("#item4").click(function(){
-        $('.ui.modal.item4').modal('show');
-      });
-
-      $("#item5").click(function(){
-        $('.ui.modal.item5').modal('show');
-      });
-
-      $("#item6").click(function(){
-        $('.ui.modal.item6').modal('show');
       });
 
       $('.ui.dropdown').dropdown();
@@ -385,7 +431,6 @@
           hide: 800
         }
       });
-    });
   </script>
 
 </body>

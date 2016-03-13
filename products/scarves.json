@@ -1,0 +1,30 @@
+[
+  {
+       "name":"Blue Leaf With Fringe",
+       "price": "$29.00",
+       "img": "images/scarves/1-full.png",
+       "thumb": "images/scarves/1-thumb.png",
+       "description": "Fringed scarf with a blue leaf design. Available in several colors."
+   },
+   {
+       "name": "Silk Scarf",
+       "price": "$79.00",
+       "img": "images/scarves/2-full.png",
+       "thumb": "images/scarves/2-thumb.png",
+       "description": "Red scarf made of 100% Chinese silk."
+   },
+   {
+       "name": "Gray Leaf With Fringe",
+       "price": "$29.00",
+       "img": "images/scarves/3-full.png",
+       "thumb": "images/scarves/3-thumb.png",
+       "description": "Fringed scarf with a gray leaf design. Available in several colors."
+   },
+   {
+       "name": "Blue Ruffled Scarf by Meredith",
+       "price": "$29.00",
+       "img": "images/scarves/7-full.png",
+       "thumb": "images/scarves/7-thumb.png",
+       "description": "Blue scarf with a ruffled design by Meredith."
+   }
+]

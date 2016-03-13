@@ -105,6 +105,7 @@ a.active.item {
     align-content:center;
     flex-direction:column;
     color:#7aa2cf;
+    overflow: hidden;
 }
 
 .grid-hover-img {
@@ -226,6 +227,10 @@ a.active.item {
 }
 
 /* Refine dropdown */
+.ui.dropdown .menu>.item {
+    font-size:inherit;
+}
+
 .ui.dropdown {
     width:100% !important;
     border:none !important;
@@ -281,6 +286,10 @@ a.active.item {
 .bottom-grid-links {
     text-align:center;
     margin-top:1%;
+}
+
+.bottom-grid-links a {
+    color:7aa2cf !important;
 }
 
 .bottom-grid-links input{

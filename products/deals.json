@@ -1,0 +1,44 @@
+[
+  {
+       "name":"Citrine and Apatite Pendant",
+       "price": "$279.00 $159.00",
+       "img": "images/deals/1-full.png",
+       "thumb": "images/deals/1-thumb.png",
+       "description": "18\" solid sterling silver curb chain with a citrine and apatite drop."
+   },
+   {
+       "name": "Starfish Cuff",
+       "price": "$59.00 $39.00",
+       "img": "images/deals/4-full.png",
+       "thumb": "images/deals/4-thumb.png",
+       "description": "Large sparkly starfish cuff bracelet."
+   },
+   {
+       "name": "Mid-Century Copper Necklace",
+       "price": "$139.00 $99.00",
+       "img": "images/deals/5-full.png",
+       "thumb": "images/deals/5-thumb.png",
+       "description": "Copper choker with white sugar enamel stations 16\" - 18\"."
+   },
+   {
+       "name": "Tri-Color Pearl & Tiger Eye",
+       "price": "$69.00 $45.00",
+       "img": "images/deals/6-full.png",
+       "thumb": "images/deals/6-thumb.png",
+       "description": "Earrings made of tri-color pearl and tiger eye."
+   },
+   {
+       "name": "1970's Enamel Drops",
+       "price": "$25.00 $15.00",
+       "img": "images/deals/7-full.png",
+       "thumb": "images/deals/7-thumb.png",
+       "description": "1970's enamel drops earrings."
+   },
+   {
+       "name": "Faceted Green Agate",
+       "price": "$69.00 $49.00",
+       "img": "images/deals/9-full.png",
+       "thumb": "images/deals/9-thumb.png",
+       "description": "18\" sterling silver snake chain with faceted green agate pendant."
+   }
+]
