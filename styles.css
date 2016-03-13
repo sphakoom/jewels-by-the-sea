@@ -116,7 +116,7 @@ a.active.item {
     transition: all 0.5s; 
 }
 
-.grid-hover-img:hover, .grid-hover-img:focus {
+.grid-hover-img:hover, .grid-hover-img:focus, .grid-hover-img:active {
     opacity:0.10;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
